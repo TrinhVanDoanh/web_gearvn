@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assest/css/cart.css">
+    <title>Giỏ hàng</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_top">
+            <img class="header__image-royally" src="./assest/image/rog_ally_0865a5bf20c74bbdbbf0ea15bad87f66.webp"
+                alt="">
+        </div>
+        <div class="header__content-list">
+            <div class="header__content-main">
+                <a href="index.html"><img class="header__content-logo"
+                        src="./assest/image/logo_fd11946b31524fbe98765f34f3de0628.svg" alt=""></a>
+                <div class=" header__content-item header__content-category ">
+                    <a href="">
+                        <div class="header__content-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <div class="header__content-category-text">
+                            Danh mục
+                        </div>
+                    </a>
+                </div>
+                <div class="header__content-item">
+                    <div class="header_seach">
+                        <input type="text" placeholder="Bạn cần gì?" class="header_seach-input">
+                        <div class="header__content-seach-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__content-item">
+                    <a href="">
+                        <div class="header__content-icon">
+                            <i class="fa-solid fa-headphones"></i>
+                        </div>
+                        <div class="header__content-hotline-text">
+                            Hotline 1800.6975
+                        </div>
+                    </a>
+                </div>
+                <div class="header__content-item">
+                    <a href="systemshowroom.html" target="_blank">
+                        <div class="header__content-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="header__content-system-text">
+                            Hệ thống Showroom
+                        </div>
+                    </a>
+                </div>
+                <div class="header__content-item">
+                    <a href="">
+                        <div class="header__content-icon">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <div class="header__content-seachforhelp-text">
+                            Tra cứu đơn hàng
+                        </div>
+                    </a>
+                </div>
+                <div class="header__content-item">
+                    <a href="">
+                        <div class="header__content-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="header__content-cart-text">
+                            Giỏ hàng
+                        </div>
+                    </a>
+                </div>
+                <div class="header__content-item header__content-login">
+                    <a href="">
+                        <div class="header__content-icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="header__content-login-text">
+                            Đăng nhập
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="nav_bar">
+            <ul class="nav_bar-list">
+                <li class="nav_bar-item">
+                    <a class="nav_bar-link" href="#">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>Tổng hợp khuyến mãi</span>
+                    </a>
+                </li>
+                <li class="nav_bar-item">
+                    <a class="nav_bar-link" href="#">
+                        <i class="fa-regular fa-newspaper"></i>
+                        <span>Tin công nghệ</span>
+                    </a>
+                </li>
+                <li class="nav_bar-item">
+                    <a class="nav_bar-link" href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>Video</span>
+                    </a>
+                </li>
+                <li class="nav_bar-item">
+                    <a class="nav_bar-link" href="#">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span>Hướng dẫn thanh toán</span>
+                    </a>
+                </li>
+                <li class="nav_bar-item">
+                    <a class="nav_bar-link" href="#">
+                        <i class="fa-solid fa-coins"></i>
+                        <span>Hướng dẫn trả góp</span>
+                    </a>
+                </li>
+                <li class="nav_bar-item">
+                    <a class="nav_bar-link no_border-right" href="#">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Chính sách bảo hành</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="cart_wraper">
+        <div class="cart_main">
+            <div class="buy_more">
+                <a href=""> <i class="fa-solid fa-chevron-left"></i> Mua thêm sản phẩm khác </a>
+            </div>
+            <div class="cart_content">
+                <div class="status_purchase">
+                    <div class="status_purchase-list">
+                        <div class="status_purchase-item status-one"><i class="fa-solid fa-bag-shopping"></i>
+                            <div>Giỏ hàng</div>
+                        </div>
+                        <div class="status_purchase-item status-two"><i class="fa-solid fa-address-card"></i>
+                            <div>Thông tin đặt hàng</div>
+                        </div>
+                        <div class="status_purchase-item status-three"><i class="fa-solid fa-credit-card"></i>
+                            <div>Thanh toán</div>
+                        </div>
+                        <div class="status_purchase-item status-four"><i class="fa-solid fa-calendar-check"></i>
+                            <div>Hoàn tất</div>
+                        </div>
+                        <hr class="cart_line-status-one">
+                        <hr class="cart_line-status-two">
+                        <hr class="cart_line-status-three">
+                    </div>
+                </div>
+                <!-- list sản phẩm -->
+                <div class="cart_infos">
+
+                </div>
+                <hr class="cart_line-seperate">
+                <div class="cart_use-coupon-main">
+                    <div class="cart_use-coupon">
+                        <i class="fa-solid fa-ticket"></i>
+                        <span>Sử dụng mã giảm giá</span>
+                        <i class="fa-solid fa-sort-down icon2"></i>
+                    </div>
+                    <div class="selection-coupon">
+                        <div class="import-discountcode"><input type="text"
+                                placeholder="Nhập mã giảm giá / Phiếu mua hàng"></div>
+                        <button class="apply-discountcode">Áp dụng</button>
+                    </div>
+                </div>
+
+                <hr class="cart_line-seperate">
+                <div class="cart_total">
+                    <div class="cart_shipping">
+                        <div class="shipping_tiltle">Phí vận chuyển:</div>
+                        <div class="shipping_price">Miễn phí</div>
+                    </div>
+                    <div class="cart_total-price">
+                        <div class="total-price_tiltle">Tổng tiền</div>
+                        <div class="total-price"></div>
+                    </div>
+                    <button class="cart_action">Đặt hàng ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-col  grid__column-2 ">
+                <h5 class="footer-title">VỀ GEARVN</h5>
+                <div class="footer-content">
+                    <p><a href="">Giới thiệu</a> </p>
+                    <p><a href="">Tuyển dụng</a></p>
+                </div>
+            </div>
+            <div class="footer-col grid__column-2 ">
+                <h5 class="footer-title">CHÍNH SÁCH</h5>
+                <div class="footer-content">
+                    <p><a href="">Chính sách bảo hành</a> </p>
+                    <p><a href="">Chính sách thanh toán</a></p>
+                    <p><a href=""> Chính sách giao hàng</a> </p>
+                    <p><a href="">Chính sách bảo mật</a></p>
+                </div>
+            </div>
+            <div class="footer-col grid__column-2 ">
+                <h5 class="footer-title">THÔNG TIN</h5>
+                <div class="footer-content">
+                    <p> <a href="">Hệ thống cửa hàng</a></p>
+                    <p> <a href="">Trung tâm bảo hành</a></p>
+                </div>
+            </div>
+            <div class="footer-col grid__column-2 ">
+                <h5 class="footer-title">TỔNG ĐÀI HỖ TRỢ (MIỄN PHÍ GỌI)</h5>
+                <div class="footer-content footer-content-hottline">
+                    <p> Gọi mua:<a href=""> 1800.6975 </a>(8:00 - 21:00)</p>
+                    <p>CSKH:<a href=""> 1800.6173 </a>(8:00 - 21:00)</p>
+                    <p>Email:<a href="">cskh@gearvn.com </a></p>
+                </div>
+            </div>
+            <div class="footer-col  footer-ship grid__column-2 ">
+                <h5 class="footer-title">ĐƠN VỊ VẬN CHUYỂN</h5>
+                <div class="footer-content">
+                    <img src="./assest/image/ship_1.webp" alt="" class="footer-image">
+                    <img src="./assest/image/ship_2.webp" alt="" class="footer-image">
+                    <img src="./assest/image/ship_3.webp" alt="" class="footer-image">
+                    <img src="./assest/image/ship_4.webp" alt="" class="footer-image">
+                </div>
+                <h5 class="footer-title">CÁCH THỨC THANH TOÁN</h5>
+                <div class="footer-content">
+                    <img src="./assest/image/pay_1.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_2.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_3.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_4.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_5.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_6.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_7.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_8.webp" alt="" class="footer-image">
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-line"></div>
+        <div class="connect">
+            <div class="connect_left">
+                <h4 class="connect_title">KẾT NỐI VỚI CHÚNG TÔI</h4>
+                <a href=""><img src="./assest/image/facebook.webp" alt="" class="connect-image"></a>
+                <a href=""><img src="./assest/image/tiktok.webp" alt="" class="connect-image"></a>
+                <a href=""><img src="./assest/image/youtube.webp" alt="" class="connect-image"></a>
+                <a href=""><img src="./assest/image/2023-06-07_11.webp" alt="" class="connect-image"></a>
+                <a href=""><img src="./assest/image/group_1.webp" alt="" class="connect-image"></a>
+            </div>
+            <div class="connect_right"><img src="./assest/image/logo-bct.webp" class="connect_right-img" alt=""></div>
+        </div>
+    </footer>
+
+</body>
+<script src="./assest/js/main.js"></script>
+<script src="./assest/js/cart.js"></script>
+
+</html>

@@ -1,0 +1,2725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <title>Trang chủ</title>
+</head>
+<body>
+    <div class="app">
+       <form id="form_login" action="" >
+        <div class="auth-form">
+            <div class="auth-form__header">
+                <h2 class="auth-form__heading">ĐĂNG NHẬP HOẶC TẠO TÀI KHOẢN</h2>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+    
+            <hr style="color: #aeaaaa;">
+    
+           <div class="auth-form__container">
+            <div class="auth-form__form">
+                <div class="auth-form__group">
+                    <input type="text" class="auth-form__input auth-form_input_email_login" placeholder="Email">
+                
+                <div class="error"></div>
+            </div>
+    
+                <div class="auth-form__group">
+                    <input type="password" class="auth-form__input auth-form_input_pass_login" placeholder="Password">
+                <div class="error"></div>
+                </div>
+            </div>
+            <p style="margin-top: 10px">
+                <a href="" class="link-check__pass">
+                    Quên mật khẩu
+                </a>
+            </p>
+    
+            <div class="auth-form__controls">
+                <button type="submit" class="btn btn--primary1"><p style="color: #fff; font-weight: 550;">ĐĂNG NHẬP</p></button>
+            </div>
+    
+            <div class="auth-form__hr">
+                <hr width="137px">
+                <p class="auth-form__hr-text">hoặc đăng nhập bằng</p>
+                <hr width="137px">
+            </div>
+    
+            <div class="auth-form__socials">
+                <a href="" class=" btn btn--size-s btn--with-icon">
+                    <i class="auth-form__socials-icons fa-brands fa-google-plus-g"></i>
+                    <p class="social-text">Google</p>
+                </a>
+                <a href="" class=" btn btn--size-ss btn--with-icon">
+                    <i class="auth-form__socials-icon fa-brands fa-facebook-f"></i>
+                    <p class="social-text">Facebook</p>
+                </a>    
+            </div>
+            <p class="auth-form__policy-text">
+                <span style="color: gray;">Bạn chưa có tài khoản?</span>
+                <a href="#" class="auth-form__policy-link">
+                    <span>Đăng kí ngay!</span>
+                </a>
+            </p>
+           </div>
+            </div> 
+    </form>
+        <form id="form" action="" >
+            <div class="auth-form auth-form-register">
+                <div class="auth-form__header auth-form__header_second">
+                    <h3 class="auth-form__heading">ĐĂNG KÍ TÀI KHOẢN GEARVN</h3>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <hr style="color: #aeaaaa;">
+        
+               <div class="auth-form__container">
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input auth-form_input_user" placeholder="Họ và Tên">
+                        <div class="error"></div>
+                    </div>
+        
+                    <div class="auth-form__group">
+                        <input type="email" class="auth-form__input auth-form_input_email" placeholder="Email">
+                        <div class="error"></div>
+                    </div>
+        
+                    <div class="auth-form__group">
+                        <input type="password" class="auth-form__input auth-form_input_pass" placeholder="mật Khẩu">
+                        <div class="error"></div>
+                    </div>
+                </div>
+        
+                <label class="checkbox" for="myCheckboxId">
+                    <input type="checkbox" name="myCheckboxName" id="myCheckboxId" class="checkbox__input">
+                    <div class="checkbox__box"></div>
+                    Đăng kí nhận tin khuyến mãi qua Email
+                </label>
+        
+                <div class="auth-form__controls">
+                    <button class="btn btn--primary" type="submit"><p style="color: #fff; font-weight: 550;">TẠO TÀI KHOẢN</p></button>
+                </div>
+        
+                <div class="auth-form__hr">
+                    <hr width="137px">
+                    <p class="auth-form__hr-text">hoặc đăng nhập bằng</p>
+                    <hr width="137px">
+                </div>
+        
+                <div class="auth-form__socials">
+                    <a href="" class=" btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icons fa-brands fa-google-plus-g"></i>
+                        <p class="social-text">Google</p>
+                    </a>
+                    <a href="" class=" btn btn--size-ss btn--with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-facebook-f"></i>
+                        <p class="social-text">Facebook</p>
+                    </a>    
+                </div>
+                <p class="auth-form__policy-text">
+                    Bạn đã có tài khoản?
+                    <a href="#" class="auth-form__policy-link auth-form__policy-link_second">
+                        <span>Đăng nhập</span>
+                    </a>
+                </p>
+               </div>
+          </div>
+        </form>
+        <div class="cover_layer"></div>
+        <div class="header">
+            <div class="header_img">
+                <a href=""><img src="image/header.webp" alt="" class="header_img-first"></a>
+            </div>
+            <div class="header_app">
+                <div>
+                    <a href=""><img class="header-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQunAFpV4HMORyJcbggXPkyheBzspRwD4CqB9lT4YIX&s" alt=""></a>
+                </div>
+                <div class="header_app-list">
+                     <a class="header_app-list header_app-list-list" href="#">
+                        <i class=" fas fa-bars"></i>
+                    <span>Danh mục</span>
+                     </a>
+                </div>
+                <div>
+                    <div class="header_app-seacher">
+                        <input type="text" placeholder="Bạn cần tìm gì">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="header_app-seacher-list">
+                    </div>
+                    <div class="show-more"></div>
+                    <div class="show-more-more"></div>
+                </div>
+                <div class="header_app-information">
+                    <a class="header_app-information" href="">
+                        <i class="fas fa-headset"></i>
+                    <div>
+                    <span style="margin-right: 14px;">Hotline</span>
+                    <span>1800.6975</span>
+                    </div>
+                    </a>
+                </div >
+                <div class="header_app-information">
+                    <a class="header_app-information" href="">
+                        <i class="fa-solid fa-location-dot"></i>
+                   <div>
+                    <span>Hệ thống</span>
+                    <span>Showrom</span>
+                   </div>
+                    </a>
+                </div>
+                <div class="header_app-information">
+                    <a class="header_app-information" href="">
+                        <i class="fa-solid fa-file-circle-check"></i>
+                    <div>
+                    <span class="header_span_app">Tra cứu</span><br>
+                    <span>Đơn hàng</span>
+                    </div>
+                    </a>
+                </div>
+                <div class="header_app-information--cart">
+                   <a class="header_app-information" href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div>
+                        <span class="header_span_app">Giỏ</span><br>
+                        <span>Hàng</span>
+                    </div>
+                   </a>
+                </div>
+                <div class="header_app-information--user">
+                    <a class="header_app-information" href="">
+                        <i class="fa-solid fa-user"></i>
+                    <div>
+                        <span class="header_span_user">Đăng</span><br>
+                        <span>nhập</span>
+                    </div>
+                    </a>
+                    <div class="user_login-triangle"></div>
+                    <div class="user_login">
+                        <div class="user_login-header">
+                            <i class="fa-solid fa-hands"></i>
+                            <span class="user_login-header-span">Xin chào, vui lòng đăng nhập</span>
+                        </div>
+                        <div class="user-button">
+                            <button class="login-button">Đăng nhập</button>
+                            <button class="register-button">Đăng ký</button>
+                        </div>
+                        <div class="user_login-hr"></div>
+                        <div class="user_login-block"></div>
+                        <div class="user_login-icon">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <span class="user_login-header-span">Trợ giúp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="header-feature">
+            <div class="header_information">
+                <a class="header_information" href="">
+                    <div class="header_infor-feature">
+                        <i class="fa-solid fa-gift header_infor-feature-icon"></i>
+                        <span>Thông tin khuyến mãi</span>
+                    </div>
+                </a>
+            </div>
+            <div class="strikethrough"></div>
+            <a href="">
+                <div class="header_information">
+                    <div class="header_infor-feature">
+                        <i class="fa-solid fa-newspaper header_infor-feature-icon"></i>
+                        <span>Tin công nghệ</span>
+                    </div>
+                </div>
+            </a>
+            <div class="strikethrough"></div>
+            <a href="">
+                <div class="header_information">
+                    <div class="header_infor-feature">
+                        <i class="fa-brands fa-youtube header_infor-feature-icon"></i>
+                        <span>Video</span>
+                    </div>
+                </div>
+            </a>
+            <div class="strikethrough"></div>
+            <a href="">
+                <div class="header_information">
+                    <div class="header_infor-feature">
+                        <i class="fa-solid fa-credit-card header_infor-feature-icon"></i>
+                        <span>Hướng dẫn thanh toán</span>
+                    </div>
+                </div>
+            </a>
+            <div class="strikethrough"></div>
+            <a href="">
+                <div class="header_information">
+                    <div class="header_infor-feature">
+                        <i class="fa-solid fa-coins header_infor-feature-icon"></i>
+                        <span>Hướng dẫn trả góp</span>
+                    </div>
+                </div>
+            </a>
+            <div class="strikethrough"></div>
+            <a href="">
+                <div class="header_information">
+                    <div class="header_infor-feature">
+                        <i class="fa-solid fa-shield header_infor-feature-icon"></i>
+                        <span>Chính sách bảo hành</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+       
+        <div class="app_center">
+            <div class="container">
+                <div class="container_img container_img1">
+                    <a href=""><img class="img-fixed" src="image/banner_viper_i1660s_side_web_ce508ca080844543a26ce66f1e248afb.webp" alt=""></a>
+                </div>
+                <div class="app_center1"></div>
+                <div class="container_info">
+                    <div class="container_info-left">
+                        
+                        <div class="container_infor-banner">
+                            <a href="categoryProduct.html" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-laptop container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">Laptop</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thương hiệu</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">ASUS</a></li>
+                                <li><a  href="">ACER</a></li>
+                                <li><a  href="">MSI</a></li>
+                                <li><a  href="">LENOVO</a></li>
+                                <li><a  href="">HP</a></li>
+                                <li><a  href="">DELL</a></li>
+                                <li><a  href="">LC GRAM</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Giá bán</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Dưới 15 triệu</a></li>
+                                <li><a  href="">Từ 15 đến 20 triệu</a></li>
+                                <li><a  href="">Trên 20 triệu</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>CPU Intel-AMD</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Intel Core i3</a></li>
+                            <li><a  href="">Intel Core i5</a></li>
+                            <li><a  href="">Intel Core i7</a></li>
+                            <li><a  href="">AMD Ryzen</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Nhu cầu sử dụng</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Đồ họa-studio</a></li>
+                            <li><a  href="">Học sinh-Sinh viên</a></li>
+                            <li><a  href="">Mỏng nhẹ cao cấp</a></li>
+                            <li><a  href="">Studio RTX 40 servies</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Linh kiện Laptop</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Ram Laptop</a></li>
+                            <li><a  href="">SSD Laptop</a></li>
+                            <li><a  href="">Ổ cứng di động</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header-1" href=""><h3>Phụ kiện Laptop</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Ralo- Túi chống sóc</a></li>
+                            <li><a  href="">Đế tản nhiệt Laptop</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Laptop ASUS</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">ASUS OLED Server</a></li>
+                                <li><a  href="">ASUS OLEG Servies</a></li>
+                                <li><a  href="">ViveBook Servies</a></li>
+                                <li><a  href="">VivoBook Pro Servies</a></li>
+                                <li><a  href="">Zenbook Series</a></li>
+                                <li><a  href="">ProArt StudioBook Series</a></li>
+                                
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Laptop ASER</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Aspice Series</a></li>
+                            <li><a  href="">Swift Serives</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Laptop MSI</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Model Series</a></li>
+                            <li><a  href="">Prestige Serives</a></li>
+                            <li><a  href="">Summit Series</a></li>
+                            <li><a  href="">CREATOR Series</a></li>
+                          
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Laptop LENOVO</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">ASUS</a></li>
+                            <li><a  href="">ThinkBook Series</a></li>
+                            <li><a  href="">IdeaPad Series</a></li>
+                            <li><a  href="">IdeaPad pro Series</a></li>
+                            <li><a  href="">Yoga Series</a></li>
+                                
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-3"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Laptop DELL</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Insprition Series</a></li>
+                            <li><a  href="">Vostro Series</a></li>
+                            <li><a  href="">Latitude Series</a></li>
+                            <li><a  href="">XPS Series</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-3"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Laptop HP</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">ASUS</a></li>
+                            <li><a  href="">Pravition Series</a></li>
+                            <li><a  href="">Envy Series</a></li>
+                            <li><a  href="">Probook Series</a></li>
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-tv container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">Laptop Gaming</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-2">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thương hiệu</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">ASUS/ROG</a></li>
+                                <li><a  href="">ACER/PHEDATOR</a></li>
+                                <li><a  href="">MSI</a></li>
+                                <li><a  href="">LENOVO</a></li>
+                                <li><a  href="">HP</a></li>
+                                <li><a  href="">DELL</a></li>
+                                <li><a  href="">GIGABYTE/AORUS</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Giá bán</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Dưới 20 triệu</a></li>
+                                <li><a  href="">Từ 20 đến 25 triệu</a></li>
+                                <li><a  href="">Từ 25-30 triệu</a></li>
+                                <li><a  href="">Trên 30 triệu</a></li>
+                                <li><a  href="">Gaming RTX 40 Series</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>ACER/PREDATOR</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Intel Core i3</a></li>
+                            <li><a  href="">Nitro Series</a></li>
+                            <li><a  href="">Aspire Series</a></li>
+                            <li><a  href="">ConceptID Series</a></li>
+                            <li><a  href="">ACER RTX 40 Series</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>ASUS | ROG Gaming</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Intel Core i3</a></li>
+                            <li><a  href="">GF Series</a></li>
+                            <li><a  href="">GS Series</a></li>
+                            <li><a  href="">Bravo Series</a></li>
+                            <li><a  href="">Creater Series</a></li>
+                            <li><a  href="">MSI AMD Series</a></li>
+                            <li><a  href="">Crosshar Series</a></li>
+                            <li><a  href="">MSI RTX 40 Series</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>LENOVO Gaming</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Legon Gaming</a></li>
+                            <li><a  href="">Ideapad Gaming</a></li>
+                            <li><a  href="">LENOVO RTX 40 Series</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header-1" href=""><h3>DELL Gaming</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">DELL Gaming G Series</a></li>
+                            <li><a  href="">Alierware series</a></li>
+                            <li><a  href="">Dell RTX 40 Series</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>GIGABYTE Gaming</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">GIGABYTE G5|G7</a></li>
+                                <li><a  href="">GIGABYTE ACRUS</a></li>
+                                <li><a  href="">GIGABYTE AERO</a></li>
+                                <li><a  href="">GIGABYTE AERO</a></li>
+                                <li><a  href="">GIGABYTE RTX 40 Series</a></li>
+                                
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Card đồ họa</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">GTX 1650</a></li>
+                            <li><a  href="">AMD Radeon RX</a></li>
+                            <li><a  href="">RTX 3050/3050Ti</a></li>
+                                <li><a  href="">RTX 3060</a></li>
+                                <li><a  href="">RTX 3070/3080</a></li>
+                                <li><a  href="">GIGABYTE RTX 40 Series</a></li>
+                                <li><a  href=""> RTX 40 Series</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Linh kiện Laptop</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Intel Core i3</a></li>
+                            <li><a  href="">Ram Laptop</a></li>
+                            <li><a  href="">SSD Laptop</a></li>
+                            <li><a  href="">Ổ cứng di dộng</a></li>
+                          
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Phụ kiện Laptop</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Đế tản nhiệt</a></li>
+                             
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-server container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">PC KM Đặc biệt</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-3">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Giá tốt mùa hè</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Viperi3070Ti(11th)-24,990k</a></li>
+                                <li><a  href="">Viper Plus a3050-Mua màn 1,0000d</a></li>
+                                <li><a  href="">Viperi1660s(11th)-Mua tản 1,000đ</a></li>
+                                <li><a  href="">Minion i1650-9,990k</a></li>
+                                
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Khuyến mãi đặc biệt</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Titan Plus i4090-Tặng voucher 15tr</a></li>
+                                <li><a  href="">Phamtom Plus i4070Ti-Tặng tản nhiệt</a></li>
+                                <li><a  href="">Phamtom i4070-Tặng tản nhiệt</a></li>
+                                <li><a  href="">Phamtom  i4070-Tặng tản nhiệt</a></li>
+                                <li><a  href="">Phamtom i3070Ti-Tặng tản nhiệt</a></li>
+                                <li><a  href="">Viper Plus i4070Ti-Tặng tản nhiệt</a></li>
+                               
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Khuyến mãi đặc biệt</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Viper Plus i3070Ti-Tặng tản nhiệt</a></li>
+                            <li><a  href="">Viper Plus i3070Ti-Tặng tản nhiệt</a></li>
+                            <li><a  href="">Viper Plus i3060 White-Voucher 2tr</a></li>
+                            <li><a  href="">Viper i3060-Voucher màn hình 2tr</a></li>
+                            <li><a  href="">Viper Plus i3050Ti-Voucher màn hình 1tr500</a></li>
+                            <li><a  href="">Minion i3050-Voucher màn hình 1tr500</a></li>
+                            <li><a  href="">Minion i1650 White-Tặng RAM</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>GVN WHITE EDITION</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Poseidon 9 13090</a></li>
+                            <li><a  href="">Poseidon S White</a></li>
+                            <li><a  href="">Phamtom Plus i4080</a></li>
+                            <li><a  href="">Viper Plus i3060</a></li>
+                            <li><a  href="">Minion i1650</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>GVN POSEIDON CUSTOM NƯỚC</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Poseidon 5 i3060-Tặng tản nhiệt custom</a></li>
+                            <li><a  href="">Poseidon 7 i3060-Tặng tản nhiệt custom</a></li>
+                            <li><a  href="">Poseidon S White-i5-3060</a></li>
+                            <li><a  href="">Poseidon 7 i3080</a></li>
+                            <li><a  href="">Poseidon 9 i3090</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header-1" href=""><h3>GIAN HÀNG CHÍNH HÃNG</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Asus</a></li>
+                            <li><a  href="">AMD</a></li>
+                            <li><a  href="">Corsair</a></li>
+                            <li><a  href="">NZXT</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Đèn thông linh Nanoleaf</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Bộ bắt đầu</a></li>
+                                <li><a  href="">Bộ mở rộng</a></li>
+                                
+                        </ul>
+                       
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-server container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">PC Gaming</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-4">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>GVN TITAN-Core i9</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Titan Plus i4090</a></li>
+                                <li><a  href="">Titan Plus i4080</a></li>
+                                <li><a  href="">Titan Plus i4070Ti</a></li>
+                                <li><a  href="">Titan Plus i3070Ti</a></li>
+                                <li><a  href="">Titan i3060Ti</a></li>
+                                <li><a  href="">Titan i3060Ti</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>GVN PHANTOM-Core i7</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Phanto Plus i4080</a></li>
+                                <li><a  href="">Phantom Plus i4070Ti</a></li>
+                                <li><a  href="">Phantom i4070</a></li>
+                                <li><a  href="">Phantom Plus i3070Ti</a></li>
+                                <li><a  href="">Phantom i4060Ti</a></li>
+                                <li><a  href="">Phantom i3060Ti</a></li>
+                                <li><a  href="">Phantom i3060</a></li>
+                                <li><a  href="">Phantom i3050</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>GVN VIPER-Core i5</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Viper Plus i4070</a></li>
+                            <li><a  href="">Viper Plus i3070Ti</a></li>
+                            <li><a  href="">Viper Plus i3060Ti</a></li>
+                            <li><a  href="">Viper Plus i3060 White</a></li>
+                            <li><a  href="">Viper Plus i3060</a></li>
+                            <li><a  href="">Viper i4060Ti</a></li>
+                            <li><a  href="">Viper i3070Ti(11th)</a></li>
+                            <li><a  href="">Viper i3060</a></li>
+                            <li><a  href="">Viper i3050</a></li>
+                            <li><a  href="">Viper i1660s(11th)</a></li>
+                            <li><a  href="">Viper i1650(11th)</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>GVN MINION-core i3</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Minion i3050</a></li>
+                            <li><a  href="">Minion i1660s</a></li>
+                            <li><a  href="">Minion i1650</a></li>
+                            <li><a  href="">Minion i1650 White</a></li>
+                            <li><a  href="">Minion i1030</a></li>
+                            <li><a  href="">Minion i730</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>GVN TITAN-Ryzen 9</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Titan Plus a4090</a></li>
+                            <li><a  href="">Titan Plus a4080</a></li>
+                            <li><a  href="">Titan Plus a4070Ti</a></li>
+                            <li><a  href="">Titan Plus a3070Ti</a></li>
+                            <li><a  href="">Titan a3060</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header-1" href=""><h3>GVN PHANTOM-Ryzen 7</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Phantom Plus a4080</a></li>
+                            <li><a  href="">Phantom Plus a4070Ti</a></li>
+                            <li><a  href="">Phantom Plus a3070Ti</a></li>
+                            <li><a  href="">Phantom Plus a3060Ti</a></li>
+                            <li><a  href="">Phantom a3070Ti</a></li>
+                            <li><a  href="">Phantom a3060Ti</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>GVN VIPER-Ryzen 5</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Viper Plus a3070Ti</a></li>
+                                <li><a  href="">Viper Plus a3050</a></li>
+                                <li><a  href="">Viper a3060</a></li>
+                                <li><a  href="">Viper a1660s</a></li>
+                                <li><a  href="">Viper a 1650s</a></li>
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-server container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">PC Doanh Nghiệp</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-5">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Giải pháp trọn bộ GEARVN</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Homework Pentium + Màn hình</a></li>
+                                <li><a  href="">Homework + Màn hình</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Cấu hình GVN Homework</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Homework Penitum-G6405</a></li>
+                                <li><a  href="">Homework i3-10105</a></li>
+                                <li><a  href="">Homework i3-12100</a></li>
+                                <li><a  href="">Homework i5-12400</a></li>
+                                <li><a  href="">Homework i7-12700</a></li>
+                                <li><a  href="">Homework R3-3200G</a></li>
+                                <li><a  href="">Homework R5-5600G</a></li>
+                                
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Máy bọ Intel NUC</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">NUC Celeron/Penitum</a></li>
+                            <li><a  href="">NUC10 (CPU Intel 10th gen)</a></li>
+                            <li><a  href="">NUC11 (CPU Intel 11st gen)</a></li>
+                            <li><a  href="">NUC Extreme kit-Hiệu năng cao</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Máy bộ Mini PC</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">ASUS Mini PC PN63-S1</a></li>
+                            <li><a  href="">HP ProDesk 400 G^ Mini</a></li>
+                            <li><a  href="">HP EliteDesk 800 G6 Mini</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Máy tính để bàn All In One</h3></a></li>
+                             
+                        </ul>
+                        
+                        </div>
+                        </div>
+                        
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-server container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">PC đồ họa</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-5-1">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thiết kế 2D</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">G-Studio 5 Plus a3050</a></li>
+                                <li><a  href="">G-Studion 5 i1660s</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thiết kế 3D kiến trúc, mô phỏng</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">G-Studion 9 Plus i4070Ti</a></li>
+                                <li><a  href="">G-Studio 9 Plus a4070Ti</a></li>
+                                <li><a  href="">G-Studio 7 Plus a4070Ti</a></li>
+                                <li><a  href="">G-Studio 7 Plus a4070Ti</a></li>
+                                <li><a  href="">G-Studio 7 Plus i4070Ti</a></li>
+                                <li><a  href="">G-Studio 7 a3060</a></li>
+                                <li><a  href="">G-Studio 5 Plus a3070Ti</a></li>
+                                <li><a  href="">G-Studio 5 Plus i4070Ti</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Hoạt họa và chỉnh sửa video</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">G-Studio 9 Plus a7900XTX</a></li>
+                            <li><a  href="">G-Studio 9 Plus a4090</a></li>
+                            <li><a  href="">G-Studio 9 Plus i4090Ti</a></li>
+                            <li><a  href="">G-Studio 9 Plus a4070Ti</a></li>
+                            <li><a  href="">G-Studio 7 Plus a4070Ti</a></li>
+                            <li><a  href="">G-Studio 7 Plus a4079Ti</a></li>
+                            <li><a  href="">G-Studio 7 Plus i4070Ti</a></li>
+                            <li><a  href="">G-Studio 7 a3060</a></li>
+                            <li><a  href="">G-Studio 7 i3060</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Render</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">G-Studio 9 Plus a7900XTX</a></li>
+                            <li><a  href="">G-Studio 9 Plus a4090</a></li>
+                            <li><a  href="">G-Studio 9 Plus i4090</a></li>
+                            <li><a  href="">G-Studio 9 Plus a4070Ti</a></li>
+                            <li><a  href="">G-Studio 9 Plus i4070Ti</a></li>
+                            <li><a  href="">G-Studio 7 Plus a4070Ti</a></li>
+                            <li><a  href="">G-Studio 7 Plus i4070Ti</a></li>
+                        </ul>
+                       
+                           </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-microchip container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">Linh kiện</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-6">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>VGA-Card màn hình</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">RTX Ada 4090</a></li>
+                                <li><a  href="">RTX Ada 4080</a></li>
+                                <li><a  href="">RTX Ada 4070Ti</a></li>
+                                <li><a  href="">RTX Ada 4070</a></li>
+                                <li><a  href="">RTX Ada 4060 Ti(Mới)</a></li>
+                                <li><a  href="">RTX Ada 4060 (Mới)</a></li>
+                                <li><a  href="">RTX Ampree 3090Ti</a></li>
+                                <li><a  href="">RTX Ampree 3090</a></li>
+                                <li><a  href="">RTX Ampress 3080</a></li>
+                                <li><a  href="">RTX Ampree 3070 Ti</a></li>
+                                <li><a  href="">RTX Ampree 3070 </a></li>
+                                <li><a  href="">NVIDIA Quadro</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>VGA-Card màn hình</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">AMD Raden RX</a></li>
+                                <li><a  href="">RTX Ampree 3060 Ti</a></li>
+                                <li><a  href="">RTX Ampree 3060</a></li>
+                                <li><a  href="">RTX Amoree 3050</a></li>
+                                <li><a  href="">GTX 1660-RTX 2060</a></li>
+                                <li><a  href="">GTX 1650-1650 Super 4G</a></li>
+                                <li><a  href="">GT710/1030-GTX 1050 Ti</a></li>
+                                <li><a  href="">Intek Arc A380</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>CPU Bộ xử lý</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Intel Core i9</a></li>
+                            <li><a  href="">Intel Core i5</a></li>
+                            <li><a  href="">Intel Core i7</a></li>
+                            <li><a  href="">Intel Core i3</a></li>
+                            <li><a  href="">Intel Celeron-Pentium</a></li>
+                                <li><a  href="">Intel Xeon</a></li>
+                                <li><a  href="">AMD Ryzen 9</a></li>
+                                <li><a  href="">AMD Ryzen 7</a></li>
+                                <li><a  href="">AMD Ryzen 5</a></li>
+                                <li><a  href="">AMD Ryzen 3</a></li>
+                                <li><a  href="">AMD Threadripper</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Bo mạch chủ</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Intel Z790 (Mới)</a></li>
+                            <li><a  href="">Intel Z690</a></li>
+                            <li><a  href="">Intel B760 (Mới)</a></li>
+                            <li><a  href="">Intel B660</a></li>
+                            <li><a  href="">Intel H610</a></li>
+                            <li><a  href="">Intel H510</a></li>
+                            <li><a  href="">Intel X299X</a></li>
+                            <li><a  href="">AMD X670 (Mới)</a></li>
+                                <li><a  href="">AMD X570</a></li>
+                                <li><a  href="">AMD B550</a></li>
+                                <li><a  href="">AMD B650 (Mới)</a></li>
+                                <li><a  href="">AMD A320</a></li>
+                                <li><a  href="">AMD TRX40</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>RAM-Bộ nhớ trong</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Ram DDR5</a></li>
+                            <li><a  href="">RAM LED RGB-DDR4</a></li>
+                            <li><a  href="">RAM 8GB-DDR4</a></li>
+                            <li><a  href="">RAM 16GB-DDR4</a></li>
+                            <li><a  href="">RAM Corsair</a></li>
+                            <li><a  href="">RAM G.Skill</a></li>
+                            <li><a  href="">RAM Kingston</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header-1" href=""><h3>Lưu trữ SSD-HDD</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">SSD M.2 Pcle NVMe Gen 4</a></li>
+                            <li><a  href="">SSD M.2 Pcle NVMe</a></li>
+                            <li><a  href="">SSD 2.5' SATA 3</a></li>
+                            <li><a  href="">SSD 240G-256G</a></li>
+                            <li><a  href="">SSD 480G-512G</a></li>
+                            <li><a  href="">SSD trên 1TB</a></li>
+                            <li><a  href="">HDD</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Case-Vỏ máy tính</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Case dưới 1 triệu</a></li>
+                                <li><a  href="">Case từ 1 đến 2 triệu</a></li>
+                                <li><a  href="">Case trên 2 triệu</a></li>
+                                <li><a  href="">Case Inwin</a></li>
+                                <li><a  href="">Case Lian Li</a></li>
+                                <li><a  href="">Case NZXT</a></li>
+                                <li><a  href="">Case Corsair</a></li>
+                                <li><a  href="">Case Thermaltake</a></li>
+                                
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>PSU-Nguồn máy tính</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Nguồn trên 1000W</a></li>
+                            <li><a  href="">Nguồn 700W-850W</a></li>
+                                <li><a  href="">Nguồn 550W-650W</a></li>
+                                <li><a  href="">Nguồn 300W-500W</a></li>
+                                <li><a  href="">Nguồn Corsair</a></li>
+                                <li><a  href="">Nguồn NZXT</a></li>
+                                <li><a  href="">Nguồn Cooler Master</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Tản nhiệt-Fan RGB</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Tản nhiệt khí</a></li>
+                            <li><a  href="">Tản nhiệt AIO 240mm</a></li>
+                            <li><a  href="">Tản nhiệt AIO 280mm</a></li>
+                            <li><a  href="">Tản nhiệt AIO 360mm</a></li>
+                            <li><a  href="">Tản nhiệt AIO 420mm</a></li>
+                            <li><a  href="">Fan RGB</a></li>
+                            <li><a  href="">Phụ kiện máy tính</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Linh kiên PC ITX</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Bo mạch chủ ITX</a></li>
+                            <li><a  href="">Case ITX</a></li>
+                            <li><a  href="">Nguồn SFX</a></li>
+                            <li><a  href="">Tản nhiệt AIO 120mm</a></li>
+                              
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-brands fa-apple container-laptop-icon"></i>
+                                         <span style="font-size: 16px; margin-left: 13px;">Apple</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-7">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>MacBook</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">MacBook Air</a></li>
+                                <li><a  href="">MacBook Pro</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>MacBook Air</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">MacBook Air M1</a></li>
+                                <li><a  href="">MacBook Air M2</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>MacBook Pro</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">MacBook Pro 13</a></li>
+                            <li><a  href="">MacBook Pro 14</a></li>
+                            <li><a  href="">MacBook Pro 16</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>MacBook Pro 13</h3></a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>MacBook Pro 14</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">MBP 14 M2 Pro</a></li>
+                            <li><a  href="">MBP 14 M2 Max</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header-1" href=""><h3>MacBook Pro 16</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">MacBook 16 M2 Pro</a></li>
+                            <li><a  href="">MacBook 16 M2 Max</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>iMac</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">iMac M1 24"</a></li>
+                                
+                                
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Mac mini</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Mac Mini M1</a></li>
+                            <li><a  href="">Mac Mini M2</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Phụ kiện Apple</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Bàn phím,chuột</a></li>
+                            <li><a  href="">Thiết bị âm thanh</a></li>
+                          
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Mac Studio</h3></a></li>
+                                
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-3"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Phụ kiên HyoerDrive</h3></a></li>
+                            
+                            
+                        </ul>
+                       
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-display container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">Màn Hình</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-8">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Hãng sản xuất</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">ASUS</a></li>
+                                <li><a  href="">LG</a></li>
+                                <li><a  href="">ViewSonic</a></li>
+                                <li><a  href="">Dell</a></li>
+                                <li><a  href="">Gigabyte</a></li>
+                                <li><a  href="">AOC</a></li>
+                                <li><a  href="">Acer</a></li>
+                                <li><a  href="">HKC</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Hãng sản xuất</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">MSI</a></li>
+                                <li><a  href="">Lenovo</a></li>
+                                <li><a  href="">Samsung</a></li>
+                                <li><a  href="">Dell</a></li>
+                                <li><a  href="">Cooler Master</a></li>
+                                <li><a  href="">Philips</a></li>
+                                <li><a  href="">PC-Power</a></li>
+                                <li><a  href="">Alienware</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Giá tiền</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Dưới 5 triệu</a></li>
+                            <li><a  href="">Từ 5 triệu đến 10 triệu</a></li>
+                            <li><a  href="">Từ 10 triệu đến 20 triệu</a></li>
+                            <li><a  href="">Từ 20 triệu đến 30 triệu</a></li>
+                            <li><a  href="">Trên 30 triệu</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Độ phân giải</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Full HD 1080p</a></li>
+                            <li><a  href="">2k 1440p</a></li>
+                            <li><a  href="">Màn hình máy tình 4K UHD</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Tần số quét</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">60Hz</a></li>
+                            <li><a  href="">75Hz</a></li>
+                            <li><a  href="">100Hz</a></li>
+                            <li><a  href="">144Hz</a></li>
+                            <li><a  href="">240Hz</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header-1" href=""><h3>Màn hình cong</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">24" Curved</a></li>
+                            <li><a  href="">27" Curved</a></li>
+                            <li><a  href="">32" Curved</a></li>
+                            <li><a  href="">Trên 32" Curved</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Kích thước</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Màn hình 22"</a></li>
+                                <li><a  href="">Màn hình 24"</a></li>
+                                <li><a  href="">Màn hình 27"</a></li>
+                                <li><a  href="">Màn hình 29"</a></li>
+                                <li><a  href="">Màn hình 32"</a></li>
+                                <li><a  href="">Màn hình trên 32"</a></li>
+                                <li><a  href="">Hỗ trợ giá treo (VESA)</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Màn hình đồ họa</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Màn hình độ họa 24"</a></li>
+                            <li><a  href="">Màn hình độ họa 24"</a></li>
+                            <li><a  href="">Màn hình độ họa 27"</a></li>
+                            <li><a  href="">Màn hình độ họa 32"</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Phụ kiện máy tính</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Giá treo màn hình</a></li>
+                            <li><a  href="">Phụ kiên dây HDMI,DP,LAN</a></li>
+                          
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Màn hình di động</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">ASUS</a></li>
+                            <li><a  href="">Full HD 1080p</a></li>
+                            <li><a  href="">2K 1440p</a></li>
+                            <li><a  href="">Có cảm ứng</a></li>
+                                
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-3"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Máy chiếu</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Máy chiếu Asus</a></li>
+                            <li><a  href="">Máy chiếu Beecube</a></li>
+                            <li><a  href="">Máy chiếu Wanbo</a></li>
+                            <li><a  href="">Máy chiếu ViewSonic</a></li>
+                            
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-regular fa-keyboard container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">Bàn phím</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-9">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thương hiệu</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Akko</a></li>
+                                <li><a  href="">Logitech</a></li>
+                                <li><a  href="">Asus</a></li>
+                                <li><a  href="">Razer</a></li>
+                                <li><a  href="">Corsair</a></li>
+                                <li><a  href="">Leopold</a></li>
+                                <li><a  href="">iKBC</a></li>
+                                <li><a  href="">Steelseries</a></li>
+                                <li><a  href="">Vortex</a></li>
+                                <li><a  href="">IQUNIX (Mới)</a></li>
+                                <li><a  href="">Mistel</a></li>
+                                <li><a  href="">FL-Esports</a></li>
+                                <li><a  href="">Ducky</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thương hiệu</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Dare-U</a></li>
+                                <li><a  href="">E-Dra</a></li>
+                                <li><a  href="">Rapoo</a></li>
+                                <li><a  href="">Fuhlen </a></li>
+                                <li><a  href="">HyperX</a></li>
+                                <li><a  href="">Ajazz</a></li>
+                                <li><a  href="">Havit</a></li>
+                                <li><a  href="">Cooler Master</a></li>
+                                <li><a  href="">NZXT</a></li>
+                                <li><a  href="">Varmailo (Mới)</a></li>
+                                <li><a  href="">Newmen</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Giá tiền</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Dưới 1 triệu</a></li>
+                            <li><a  href="">Từ 1 triệu đến 2 triệu</a></li>
+                            <li><a  href="">Từ 2 triệu đến 3 triệu</a></li>
+                            <li><a  href="">Từ 3 triệu đến 4 triệu</a></li>
+                            <li><a  href="">Trên 4 triệu</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thuong hiệu Akko</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">ACR Series</a></li>
+                            <li><a  href="">PC75G Series</a></li>
+                            <li><a  href="">3068 Series</a></li>
+                            <li><a  href="">3084 Series</a></li>
+                            <li><a  href="">3087 Series</a></li>
+                            <li><a  href="">3098 Series</a></li>
+                            <li><a  href="">3108 Series</a></li>
+                            <li><a  href="">5087 Series</a></li>
+                            <li><a  href="">5108 Series</a></li>
+                            <li><a  href="">Mojike Servies</a></li>
+                            <li><a  href="">RGB Series</a></li><li><a  href="">Bluetooth Series</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thương hiệu Leopold</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">660M Series</a></li>
+                            <li><a  href="">750R Series</a></li>
+                            <li><a  href="">900R Series</a></li>
+                            <li><a  href="">980M Series</a></li>
+                            <li><a  href="">Bluetooth Series</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header-1" href=""><h3>Thương hiệu IKBC</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">W200 Series</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thương hiệu Razer</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Blackwindow Series</a></li>
+                                <li><a  href="">Hustman Series</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thương hiệu Corsair</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">K63 Series</a></li>
+                            <li><a  href="">K68 Series</a></li>
+                            <li><a  href="">K70 Series</a></li>
+                            <li><a  href="">K95 Series</a></li>
+                            <li><a  href="">K100 Series</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Kết nối</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Bluetooth</a></li>
+                            <li><a  href="">Wireless</a></li>
+                          
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Phụ kiên bàn phím cơ</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Leycaps</a></li>
+                            <li><a  href="">Kê tay</a></li>
+                                
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-mouse container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">Chuột + Lót chuột</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-10">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Chuột theo hãng</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Corsair</a></li>
+                                <li><a  href="">Logitech</a></li>
+                                <li><a  href="">Razer</a></li>
+                                <li><a  href="">Microsoft (Mới)</a></li>
+                                <li><a  href="">Steelseries</a></li>
+                                <li><a  href="">HyperX</a></li>
+                                <li><a  href="">Zowie</a></li>
+                                <li><a  href="">NZXT</a></li>
+                                <li><a  href="">Pulsar</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Chuột theo hãng</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Dare-U</a></li>
+                                <li><a  href="">Rapoo</a></li>
+                                <li><a  href="">Fuhlen</a></li>
+                                <li><a  href="">Havit</a></li>
+                                <li><a  href="">Akko</a></li>
+                                <li><a  href="">MSI</a></li>
+                                <li><a  href="">Cooler Master</a></li>
+                                <li><a  href="">Cougar</a></li>
+                                <li><a  href="">E-Dra</a></li>
+                                <li><a  href="">Newmen</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Chuột theo giá tiền</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Dưới 500 nghìn</a></li>
+                            <li><a  href="">Từ 500 nghìn-1 triệu</a></li>
+                            <li><a  href="">Từ 1 triệu -2 triệu</a></li>
+                            <li><a  href="">Trên 2 triệu-3 triệu</a></li>
+                            <li><a  href="">Trên 3 triệu</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thuonge hiệu Logitech</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Logitech G Pro Series</a></li>
+                            <li><a  href="">Logitech G Series</a></li>
+                            <li><a  href="">Logitech G102 Series</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Chuột không dây</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Bluetooth</a></li>
+                            <li><a  href="">Wireless</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header-1" href=""><h3>Lót chuột theo hãng</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Dare-U</a></li>
+                            <li><a  href="">Razer</a></li>
+                            <li><a  href="">Steelseries</a></li>
+                            <li><a  href="">Corsair</a></li>
+                            <li><a  href="">HyperX</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Lót chuột theo hãng</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Logitech</a></li>
+                                <li><a  href="">Akko</a></li>
+                                <li><a  href="">Havit</a></li>
+                                <li><a  href="">NZXT (Mới)</a></li>
+                                <li><a  href="">Rapoo</a></li>
+                                <li><a  href="">Asus</a></li>
+                                <li><a  href="">Cougar</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Các loại lót chuột</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Mềm</a></li>
+                            <li><a  href="">Cứng</a></li>
+                            <li><a  href="">Dày</a></li>
+                            <li><a  href="">Mỏng</a></li>
+                            <li><a  href="">Viền có led</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Lót chuột theo size</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Nhỏ</a></li>
+                            <li><a  href="">Vừa</a></li>
+                            <li><a  href="">Lớn</a></li>
+                        </ul>
+                       
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-headphones-simple container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">Tai nghe-loa</span>
+                                         
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-11">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Hãng tai nghe</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">ASUS</a></li>
+                                <li><a  href="">Logitech</a></li>
+                                <li><a  href="">HyperX</a></li>
+                                <li><a  href="">Razer</a></li>
+                                <li><a  href="">Corsair</a></li>
+                                <li><a  href="">Steelseries</a></li>
+                                <li><a  href="">Sony</a></li>
+                                <li><a  href="">Soundpeats</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Hãng tai nghe</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Dare-U</a></li>
+                                <li><a  href="">Zidli</a></li>
+                                <li><a  href="">Rapoo</a></li>
+                                <li><a  href="">Havit/MPOW</a></li>
+                                <li><a  href="">AOC</a></li>
+                                <li><a  href="">Cooler Master</a></li>
+                                <li><a  href="">E-Dra</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Tai nghe theo giá</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Tai nghe dưới 1 triệu</a></li>
+                            <li><a  href="">Tai nghe 1 triệu đến 2 triệu</a></li>
+                            <li><a  href="">Tai nghe 2 triệu đến 3 triệu</a></li>
+                            <li><a  href="">Tai nghe 3 triệu đến 4 triệu</a></li>
+                            <li><a  href="">Tai nghe trên 4 triệu</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Kiểu kêt nối</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Tai nghe Wireless</a></li>
+                            <li><a  href="">Tai nghe Bluetooth</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Kiểu tai nghe</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Tai nghe Over-ear</a></li>
+                            <li><a  href="">Tai nghe Gaming In-ear</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header-1" href=""><h3>Loa theo thương hiệu</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">SoundMax</a></li>
+                            <li><a  href="">Microlab</a></li>
+                            <li><a  href="">Thonet & Vander</a></li>
+                                <li><a  href="">Logiteach</a></li>
+                                <li><a  href="">Razer</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Loa theo giá tiền</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">ASUS OLED Server</a></li>
+                                <li><a  href="">Loa dưới 1 triệu</a></li>
+                                <li><a  href="">Loa trên 1 triệu</a></li>
+                                <li><a  href="">Loa trên 2 triệu</a></li>
+                                
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Dạng loa</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Loa để bàn</a></li>
+                            <li><a  href="">Loa di động</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Kiểu loa</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Loa Gaming</a></li>
+                            <li><a  href="">Loa Audio</a></li>
+                          
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Giá treo tai nghe</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Razer</a></li>
+                            <li><a  href="">Corsair</a></li>
+                                
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-chair container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">Ghế + bàn</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-12">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thương hiệu ghế Gaming</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Corsair</a></li>
+                                <li><a  href="">Warrrior</a></li>
+                                <li><a  href="">Razer</a></li>
+                                <li><a  href="">Raider Series</a></li>
+                                <li><a  href="">E-DRA</a></li>
+                                <li><a  href="">Anda Seat</a></li>
+                                <li><a  href="">Cougar</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thương hiệu ghế Gaming</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Noble Chair</a></li>
+                                <li><a  href="">MSI</a></li>
+                                <li><a  href="">ASUS</a></li>
+                                <li><a  href="">Cooler Master</a></li>
+                                <li><a  href="">AKRacing</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thương hiệu ghế CTH</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Sihoo</a></li>
+                            <li><a  href="">E-Dra</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Kiểu ghế</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Ghế Công thái học</a></li>
+                            <li><a  href="">Ghế Gaming</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thương hiệu Corsair</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">T3 RUSH Series</a></li>
+                            <li><a  href="">TC60 Series</a></li>
+                            <li><a  href="">TC100 Series</a></li>
+                            <li><a  href="">TC200 Series</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header-1" href=""><h3>Thương hiệu Sihoo</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">M18 Series</a></li>
+                            <li><a  href="">M57 Series</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thương hiệu DXRacer</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Drifting Series</a></li>
+                                <li><a  href="">King Series</a></li>
+                                <li><a  href="">G Series</a></li>
+                                <li><a  href="">A.I.R Series</a></li>
+                                
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Bàn Gaming</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Bàn Gaming DXRacter</a></li>
+                            <li><a  href="">Bàn Gaming E-Dra</a></li>
+                            <li><a  href="">Bàn Gaming Warrior</a></li>
+                            <li><a  href="">Bàn Gaming Cooler Master</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Bàn công thái học</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Bàn CTH E-Dra</a></li>
+                            <li><a  href="">Bàn CTH Warrior</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Lựa chọn theo cân nặng</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Dưới 80 KG</a></li>
+                            <li><a  href="">Trên 80 KG</a></li>
+                                
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-3"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Chất liệu</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Da PU</a></li>
+                            <li><a  href="">Da PVC</a></li>
+                            <li><a  href="">Da thật</a></li>
+                            <li><a  href="">Da NAPPA</a></li>
+                            <li><a  href="">Vài Smooth Fabric</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-3"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Giá tiền</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Dưới 5 triệu</a></li>
+                            <li><a  href="">Từ 5 triệu đến 10 triệu</a></li>
+                            <li><a  href="">Trên 10 triệu</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-3"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Phụ kiện trang trí</h3></a></li>
+                           
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-3"><a class="container_infor-banner-1-list-ul-header" href=""><h3>PegBoard</h3></a></li>
+                            
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-print container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">Phần mềm mạng</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-13">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Hãng sản xuất</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">ASUS</a></li>
+                                <li><a  href="">LinkSys</a></li>
+                                <li><a  href="">TP-LINK</a></li>
+                                <li><a  href="">Intel</a></li>
+                                <li><a  href="">Mercusys</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Router Wi-Fi</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Gaming</a></li>
+                                <li><a  href="">Phổ thông</a></li>
+                                <li><a  href="">Xuyên tường</a></li>
+                                <li><a  href="">Router Mesh Pack</a></li>
+                                <li><a  href="">Router WiFi 5</a></li>
+                                <li><a  href="">Router WiFi 6</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>USB Thu sóng-Card mạng</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Usb WiFi</a></li>
+                            <li><a  href="">Card WiFi</a></li>
+                            <li><a  href="">Card Ethernet</a></li>
+                            <li><a  href="">Dây cáp mạng</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Microsoft Office</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Microsoft Office 365</a></li>
+                            <li><a  href="">Office 2021</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Microsoft Windows</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li">Windows 11 Home<a  href="">
+                            <li><a  href="">Windows 11 Pro</a></li>
+                            
+                        </ul>
+                        
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-gamepad container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">Phụ kiện</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-14">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thiết bị Streaming</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">AverMedia</a></li>
+                                <li><a  href="">Razer</a></li>
+                                <li><a  href="">Elgato</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Asus ROG</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">ROG Phone</a></li>
+                                <li><a  href="">Máy chơi game cầm tay Asus</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Microphone</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Razer</a></li>
+                            <li><a  href="">Hyper</a></li>
+                            <li><a  href="">HyperX</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Webcam</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">720p</a></li>
+                            <li><a  href="">1080p</a></li>
+                            <li><a  href="">4K</a></li>
+                            <li><a  href="">Conference</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Đèn Led trang trí</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Nanoleaf</a></li>
+                            <li><a  href="">Govee</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header-1" href=""><h3>Balo & Túi sách</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Razer</a></li>
+                            <li><a  href="">Asus</a></li>
+                            <li><a  href="">GEARVN</a></li>
+                            <li><a  href="">Túi chống sốc</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Đế tản nhiệt Laptop</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Cooler Master</a></li>
+                                <li><a  href="">Rain Design</a></li>
+                                <li><a  href="">Hyperdrive</a></li>
+                                
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Tay cầm, vô lăng</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Tay cầm X-Box</a></li>
+                            <li><a  href="">Tay cầm MSI</a></li>
+                            <li><a  href="">Tay cầm PS4</a></li>
+                            <li><a  href="">Tay cầm Rapoo</a></li>
+                            <li><a  href="">Tay cầm DareU</a></li>
+                            <li><a  href="">Vô lăng</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Cổng chuyển USB, Giá đỡ</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Hyperdrive</a></li>
+                            <li><a  href="">Rain Design</a></li>
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-2"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Phụ kiện dây HDMI,DP,LAN</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Cáp HDMI</a></li>
+                            <li><a  href="">Cáp DP</a></li>
+                                
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-3"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Bộ lưu điện</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">Ares</a></li>
+                            
+                        </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-3"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thẻ nhớ-USB</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">SanDisk</a></li>
+                            
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="container_infor-banner">
+                            <a href="" class="container_infor-app-first">
+                                    <div class="container_infor-app">
+                                        <i class="fa-solid fa-gift container-laptop-icon"></i>
+                                         <span style="font-size: 15px;">Thủ thuật-Giải đáp</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right container_infor-app--icon"></i>
+                            </a>
+                           
+                            
+                           <div class="container_infor-banner-1"></div>
+                           <div class="container_infor-banner-1-list container_infor-banner-1-list-15">
+                            <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Review sản phẩm</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Đánh giá laptop Acer Nitro 5</a></li>
+                                <li><a  href="">Đánh giá laptop Asus TUF</a></li>
+                                <li><a  href="">Top những mẫu laptop đáng mua 2023</a></li>
+                                <li><a  href="">Top PC 2023</a></li>
+                                <li><a  href="">Top tai nghe 2023</a></li>
+                                <li><a  href="">Top màn hình máy tính 2023</a></li>
+                                <li><a  href="">Top chuột chơi game 2023</a></li>
+                                <li><a  href="">Top bàn phím 2023</a></li>
+                                <li><a  href="">Top card đồ họa 2023</a></li>
+                                <li><a  href="">Top RAM 2023</a></li>
+                            </ul>
+                        <ul class="container_infor-banner-1-list-ul">
+                                <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Thủ thuật-Hỏi đáp</h3></a></li>
+                                <li class="container_infor-banner-1-list-ul-li"><a  href="">Hướng dẫn cách bấm đầu dây mạng LAN</a></li>
+                                <li><a  href="">Hướng dẫn chọn mua laptop gaming</a></li>
+                                <li><a  href="">Hướng dẫn chọn mua PC</a></li>
+                                <li><a  href="">Cài đặt lại windows</a></li>
+                                <li><a  href="">Cách lưu ảnh trên máy tính</a></li>
+                                <li><a  href="">Cách giảm giật lag khi chơi game</a></li>
+                                <li><a  href="">Cách đổi IP máy tính</a></li>
+                                <li><a  href="">Xử lý màn hình bị sọc</a></li>
+                                <li><a  href="">Xử lý quên mật khẩu máy tính</a></li>
+                                <li><a  href="">Xử lý lỗi 100% CPU</a></li>
+                                <li><a  href="">Hương dẫn vệ sinh laptop</a></li>
+                                <li><a  href="">Hướng dẫn vệ sinh bàn phím</a></li>
+                                <li><a  href="">Hướng dẫn vệ sinh RAM</a></li>
+                                <li><a  href="">Hương dẫn xem cấu hình máy tính</a></li>
+                                <li><a  href="">Hướng dẫn tra tốc độ internet</a></li>
+                        </ul >
+                        <ul class="container_infor-banner-1-list-ul">
+                            <li class="container_infor-banner-1-list-ul-header-1"><a class="container_infor-banner-1-list-ul-header" href=""><h3>Tin tức công nghệ mới</h3></a></li>
+                            <li class="container_infor-banner-1-list-ul-li"><a  href="">GỢi ý quà tặng 8/3</a></li>
+                            <li><a  href="">Sale game Stream năm 2023</a></li>
+                            <li><a  href="">Windows 12 săp ra mắt</a></li>
+                            <li><a  href="">Tin tức về chat GPT</a></li>
+                            <li><a  href="">TIn tức về EVO 2023</a></li>
+                                <li><a  href="">Tính năng mới của Tiktok</a></li>
+                                <li><a  href="">Trải nghiệm game SpellForce Conquest of Eo</a></li>
+                                <li><a  href="">Trải nghiệm game Wo Long: Fallen Dynasty-Elder Ring</a></li>
+                                <li><a  href="">Tính năng mới cho Android và Wear OS</a></li>
+                                <li><a  href="">Công nghệ mới của Nvidia</a></li>
+                        </ul>
+                        
+                        </div>
+                        </div>
+                       
+                    </div>
+                    <div alss="container_info-center">
+                        <div class="container_info-center-main">
+                            <div class="container_info-center-main-icon">
+                                <i class="fa-solid fa-chevron-left icon-left"></i>
+                                <a href=""><img class="image_main img-feature" src="image/banner_slider_14.webp" alt=""></a>
+                                <i class="fa-solid fa-chevron-right icon-right"></i>
+                                <div class="smallDivs">
+                                    <img src="https://file.hstatic.net/200000722513/file/banner_slider_12_eb7f2c359b844a36b06fdf12ba80ccb8.png" class="small-div image_main" alt="">
+                                    <img  src="https://file.hstatic.net/200000722513/file/pc-gvn_ea7b0978c21d4e968c804d0618610872.png" alt="" class="small-div image_main">
+                                    <img src="https://file.hstatic.net/200000722513/file/rog_ally_1_ade1df216bf7448fb18a2cd24064ec07.png" alt="" class="small-div image_main">
+                                    <img src="https://file.hstatic.net/200000722513/file/laptop-gaming-800x400_1a6be8e5582f4361b514abbb56ab5d5a.png" class="small-div image_main" alt="">
+                                    <img  src="https://theme.hstatic.net/1000026716/1000440777/14/slideshow_5.jpg?v=36861" alt="" class="small-div image_main">
+                                    <img src="https://theme.hstatic.net/1000026716/1000440777/14/slideshow_6.jpg?v=36861" alt="" class="small-div image_main">
+
+                                    <img src="https://theme.hstatic.net/1000026716/1000440777/14/slideshow_7.jpg?v=36861" class="small-div image_main" alt="">
+                                    <img  src="https://theme.hstatic.net/1000026716/1000440777/14/slideshow_8.jpg?v=36861" alt="" class="small-div image_main">
+                                    <img src="https://file.hstatic.net/200000722513/file/banner_slider_9_86924f0f0e0e4d6c82ebaaa4aaf2aad5.png" alt="" class="small-div image_main">
+                                    <img src="https://file.hstatic.net/200000722513/file/banner_slider_10_b7a9446ffa0241a0bd527b8732c53a5b.png" class="small-div image_main" alt="">
+                                    <img  src="https://file.hstatic.net/200000722513/file/banner_slider_11_1662ea6375f44f4a86cb731fef9902d4.png" alt="" class="small-div image_main">
+                                    <img src="https://file.hstatic.net/200000722513/file/banner_web_slider_800x400_110c98f84f544a3d8e68fde49944d1a8.png" alt="" class="small-div image_main">
+                                    </div>
+                            </div>
+                            <div  class="container_produc-item-border  container_produc-item-border-1">
+                                <div class="item-border-yellow"></div>
+                                <div class="item-border-yellow "></div>
+                                <div class="item-border-yellow"></div>
+                                <div class="item-border-yellow"></div>
+                                <div class="item-border-yellow"></div>
+                                <div class="item-border-yellow"></div>
+                                <div class="item-border-yellow"></div>
+                                <div class="item-border-yellow "></div>
+                                <div class="item-border-yellow"></div>
+                                <div class="item-border-yellow"></div>
+                                <div class="item-border-yellow"></div>
+                                <div class="item-border-yellow"></div>
+                            </div>
+                            <div >
+                                <a href=""><img class="image-slider image-slider-margin" src="image/banner_slider_-_right_1.webp" alt=""><br></a>
+                                <a href=""><img  class="image-slider image-slider-margin image-sdiler-2" src="image/banner_slider_-_right_2.webp" alt=""></a>
+                            </div>
+                            
+                        </div>
+                        <div style="margin-top: 10px;" class="container_infor-center-main-buttom">
+                            <a href=""><img  class="image-slider" src="image/banner_slider_-_bottom_1.webp" alt=""></a>
+                           <a href=""> <img class="image-slider image-slider-margin" src="image/banner_slider_-_bottom_2.webp" alt=""></a>
+                            <a href=""><img class="image-slider image-slider-margin" src="image/banner_slider_-_right_3.webp" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_img">
+                    <a href=""><img src="image/ideapad3.webp" alt=""></a>
+                </div>
+            </div>
+            <div class="container_sub" align="center">
+                <a href=""><img src="image/sub_banner_1.webp" alt=""></a>
+                <a href=""><img src="image/sub_banner_2.webp" alt=""></a>
+                <a href=""><img src="image/sub_banner_3.webp" alt=""></a>
+                <a href=""><img src="image/sub_banner_4.webp" alt=""></a>
+                
+            </div>
+            <div class="container_sale">
+                <div class="container_sale-first">
+                    <div class="container_sale-first--number">
+                        <div class="container_sale-first--number-left">
+                            <span class="span-background span-background_first">0</span>
+                            <span class="span-colo">:</span><span class="span-background">00</span>
+                            <span class="span-colo">:</span><span class="span-background">00</span>
+                            <div class="div-light">
+                                <i class="fa-solid fa-bolt lightning"></i>
+                            </div>
+                            <p><i>FLASH SALE CHÍNH HÃNG</i></p>
+                        </div>
+                        <div class="container_sale-first--number-right">
+                            <a href="#">Xem thêm khuyến mãi</a>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_product">
+                    <i class="fa fa-circle-chevron-left"></i>
+                    <div class="container_product-sale">
+                        <a href="productDetails.html">
+                            <div class="product-sale__img">
+                                <img class="product-sale__img-hover" src="image/arvn.webp" alt="">
+                            </div>
+                            <div class="container_product-money">
+                                <div class="container_product-sale-link">
+                                    <a href="#">Màn hình ASUS VZ27EHE 27" IPS 75Hz viền mỏng</a>
+                                </div>
+                            <span class="money-sale-product">4.900.000 đ</span>
+                            <div class="money-sale">
+                                <p class="money-sale-price"><span>3.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                            <div class="money-sale-icon-fire">
+                                <div class="money-sale-bought">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>Đã bán:12</span>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container_product-sale">
+                       <a href="productDetails.html">
+                        <div class="product-sale__img">
+                            <img class="product-sale__img-hover" src="image/gearvn-gvn-minion.webp" alt="">
+                        </div>
+                        <div class="container_product-money">
+                            <div class="container_product-sale-link">
+                                <a href="#">PC ASUS VZ27EHE 22" IPS 75Hz viền mỏng</a>
+                            </div>
+                        <span class="money-sale-product">5.900.000 đ</span>
+                        <div class="money-sale">
+                            <p class="money-sale-price"><span>4.400.000</span>
+                                <span>đ</span></p>
+                                <span class="money-sale-reduce">-33%</span>
+                        </div>
+                        <div class="money-sale-icon-fire">
+                            <div class="money-sale-bought">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>Đã bán:12</span>
+                            </div>
+                        </div>
+                        </div>
+                       </a>
+                    </div>
+                    <div class="container_product-sale">
+                        <div class="product-sale__img">
+                            <img class="product-sale__img-hover" src="image/pc.webp" alt="">
+                        </div>
+                        <div class="container_product-money">
+                            <div class="container_product-sale-link">
+                                <a href="#">Laptop Lenovo Ideapad Gaming 3 15IAH7 82S9006YVN</a>
+                            </div>
+                        <span class="money-sale-product">5.900.000 đ</span>
+                        <div class="money-sale">
+                            <p class="money-sale-price"><span>3.300.000</span>
+                                <span>đ</span></p>
+                                <span class="money-sale-reduce">-33%</span>
+                        </div>
+                        <div class="money-sale-icon-fire">
+                            <div class="money-sale-bought">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>Đã bán:12</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale">
+                        <div class="product-sale__img">
+                            <img class="product-sale__img-hover" src="image/asus.webp" alt="">
+                        </div>
+                        <div class="container_product-money">
+                            <div class="container_product-sale-link" >
+                                <a href="#">Laptop GVN MINION i1650 viền mỏng dành cho sinh viên</a>
+                            </div>
+                        <span class="money-sale-product">4.900.000 đ</span>
+                        <div class="money-sale">
+                            <p class="money-sale-price"><span>3.400.000</span>
+                                <span>đ</span></p>
+                                <span class="money-sale-reduce">-33%</span>
+                        </div>
+                        <div class="money-sale-icon-fire">
+                            <div class="money-sale-bought">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>Đã bán:12</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale">
+                        <div class="product-sale__img">
+                            <img class="product-sale__img-hover" src="image/viper.webp" alt="">
+                        </div>
+                        <div class="container_product-money">
+                            <div class="container_product-sale-link">
+                                <a href="#">PC Dell VZ27EHE 27" IPS 75Hz viền mỏng 15IAH7 82S9006YVN</a>
+                            </div>
+                        <span class="money-sale-product">4.900.000 đ</span>
+                        <div class="money-sale">
+                            <p class="money-sale-price"><span>3.400.000</span>
+                                <span>đ</span></p>
+                                <span class="money-sale-reduce">-33%</span>
+                        </div>
+                        <div class="money-sale-icon-fire">
+                            <div class="money-sale-bought">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>Đã bán:12</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="container_product-sale">
+                        <div class="product-sale__img">
+                            <img class="product-sale__img-hover"  src="image/arvn.webp" alt="">
+                        </div>
+                        <div class="container_product-money">
+                            <div class="container_product-sale-link">
+                                <a href="#">Màn hình Dell VZ27EHE 27" IPS 75Hz viền mỏng</a>
+                            </div>
+                        <span class="money-sale-product">4.900.000 đ</span>
+                        <div class="money-sale">
+                            <p class="money-sale-price"><span>3.400.000</span>
+                                <span>đ</span></p>
+                                <span class="money-sale-reduce">-33%</span>
+                        </div>
+                        <div class="money-sale-icon-fire">
+                            <div class="money-sale-bought">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>Đã bán:12</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <i class="fa fa-circle-chevron-right"></i>
+                </div>
+                <div class="container_produc-item-border">
+                    <div class="item-border-yellow-1"></div>
+                    <div class="item-border-yellow "></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                </div>
+            </div>
+            
+            <div class="container_sale">
+                <div class="container_sale-first">
+                    <div class="container_sale-first--number">
+                        <div class="container_sale-first--number-left">
+                            <span class="span-background span-background_first">0</span>
+                            <span class="span-colo">:</span><span class="span-background">00</span>
+                            <span class="span-colo">:</span><span class="span-background">00</span>
+                            <div class="div-light">
+                                <i class="fa-solid fa-bolt lightning"></i>
+                            </div>
+                            <p><i>DEAL NGẤT NGÂY - CLICK LIỀN TAY</i></p>
+                        </div>
+                        <div class="container_sale-first--number-right">
+                            <a href="#">Xem thêm khuyến mãi</a>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_product_banner">
+                    <div >
+                        <img class="container_product_banner-img" src="https://file.hstatic.net/200000722513/file/flash_sale_banner_1_4f1ff5e92cec43038ac21134633d865a.jpg" alt="">
+                    </div>
+                    <div class="container_product container_product-have-banner">
+                        <i class="fa fa-circle-chevron-left fa-icon-left"></i>
+                        <div class="container_product-sale container_product-sale-banner">
+                            <div class="product-sale__img">
+                                <img class="product-sale__img-hover" src="image/g1.webp" alt="">
+                            </div>
+                            <div class="container_product-money" >
+                                <div class="container_product-sale-link">
+                                    <a href="#">PC GVN Homework Dell</a>
+                                </div>
+                           <div>
+                            <div style="display: block;margin-top: 25px;">
+                                <span class="money-sale-product" >4.900.000 đ</span>
+                            <div class="money-sale">
+                                <p class="money-sale-price"><span>3.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                            <div class="money-sale-icon-fire">
+                                <div class="money-sale-bought">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>Đã bán:12</span>
+                                </div>
+                            </div>
+                            </div>
+                           </div>
+                            </div>
+                        </div>
+                        <div class="container_product-sale container_product-sale-banner">
+                            <div class="product-sale__img ">
+                                <img class="product-sale__img-hover" src="image/g2.webp" alt="">
+                            </div>
+                            <div class="container_product-money">
+                                <div class="container_product-sale-link">
+                                    <a href="#">PC GVN Homework MINION</a>
+                                </div>
+                            <div style="display: block; margin-top: 25px;">
+                                <span class="money-sale-product">4.900.000 đ</span>
+                            <div class="money-sale">
+                                <p class="money-sale-price"><span>3.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                            <div class="money-sale-icon-fire">
+                                <div class="money-sale-bought">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>Đã bán:12</span>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="container_product-sale container_product-sale-banner">
+                            <div class="product-sale__img ">
+                                <img class="product-sale__img-hover" src="image/g3.webp" alt="">
+                            </div>
+                            <div class="container_product-money">
+                                <div class="container_product-sale-link">
+                                    <a href="#">PC GVN VIPER MiNION</a>
+                                </div>
+                            <div style="display: block;margin-top: 25px;">
+                                <span class="money-sale-product">4.900.000 đ</span>
+                            <div class="money-sale">
+                                <p class="money-sale-price"><span>3.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                            <div class="money-sale-icon-fire">
+                                <div class="money-sale-bought">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>Đã bán:12</span>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="container_product-sale container_product-sale-banner">
+                            <div class="product-sale__img ">
+                                <img class="product-sale__img-hover" src="image/g4.webp" alt="">
+                            </div>
+                            <div class="container_product-money">
+                                <div class="container_product-sale-link">
+                                    <a href="#">PC GVN G-Studio 7Plus</a>
+                                </div>
+                          <div style="display: block;margin-top: 25px;">
+                            <span class="money-sale-product">4.900.000 đ</span>
+                            <div class="money-sale">
+                                <p class="money-sale-price"><span>3.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                            <div class="money-sale-icon-fire">
+                                <div class="money-sale-bought">
+                                <i class="fa-solid fa-fire"></i>
+                                <span>Đã bán:12</span>
+                                </div>
+                            </div>
+                          </div>
+                            </div>
+                        </div>
+                        <i class="fa fa-circle-chevron-right fa-icon-right"></i>
+                    </div>
+                </div>
+                <div class="container_produc-item-border container_produc-item-border-bottom">
+                    <div class="item-border-yellow-1"></div>
+                    <div class="item-border-yellow "></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                    <div class="item-border-yellow"></div>
+                </div>
+            </div>
+            <div class="container_sale container_sale-sesion5">
+                <a href=""><img class="container_sale-img-sesion5-1" src="https://file.hstatic.net/200000722513/file/top_promotion_banner_2_c859a262794a4bd2a8f0b0fa59748b26.png" alt=""></a>
+                <a href=""><img class="container_sale-img-sesion5-2" src="https://file.hstatic.net/200000722513/file/rogally-home-page_d3e9c82cf3c84086b7345bf860657659.jpg" alt=""></a>
+            </div>
+            <div class="container_pc">
+                <i class="fa fa-circle-chevron-left fa-new-icon-1"></i>
+                <i class="fa fa-circle-chevron-right fa-new-icon-1"></i>
+                <div class="container_pc-first">
+                    <div class="container_pc-first-header">
+                        <a href="" class="container_pc-tieude">PC GEARVN
+                        </a>
+                        <div class="dash"></div>
+                        <span class="container_pc-icon">
+                            <i  class="fa-solid fa-truck container_pc-icon-i"></i>
+                           Miến phí giao hàng
+                        </span>
+                    </div>
+
+                    <a class="container_banner-2-link" href="#">Xem tất cả</a>
+                </div>
+                <div class="container_center-all">
+                   
+                    <div class="container_pc-right container_pc-right-bottom">
+                            <div class="all-scal">
+                                <a href="" class="container_pc-data-1">
+                                    <img class="container_pc-data-image-right" src="https://product.hstatic.net/200000722513/product/va24ehf-01__1__638b4596c8884c66819eca6cfb4e9750_grande.jpg" alt="">
+                                    <p class="container_pc-data-inf">Laptop Lenovo Ideapad Gaming 3 15IAH7 82S9006YVN</span>
+                                       
+                                </a>
+                            </div>
+                           
+                        <div class="pc-information-1">
+                            <span class="money-sale-product product-money-1">4.900.000 đ</span>
+                            <div class="money-sale container_pc-money container_pc-money_pc">
+                                <p class="money-sale-price"><span>3.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_pc-right container_pc-right-bottom">
+                       
+                            <a href="" class="container_pc-data-1">
+                                <div class="all-scal">
+                                    <img class="container_pc-data-image-right" src="https://product.hstatic.net/200000722513/product/msi_g274_gearvn_9e02831306644b82837455915e4bc28f_2c541a0810114d848e2a72d587166a7d_grande.jpg" alt="">
+                                </div>
+                               
+                                <p class="container_pc-data-inf" style="display: flex;margin-left: 4px;">Laptop Lenovo Ideapad Gaming 3 15IAH7 82S9006YVN</span>
+    
+                            </a>
+                        <div class="pc-information-1">
+                            <span class="money-sale-product product-money-1">4.900.000 đ</span>
+                            <div class="money-sale container_pc-money container_pc-money_pc">
+                                <p class="money-sale-price"><span>3.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_pc-right container_pc-right-bottom">
+                        <div class="all-scal">
+                            <a href="" class="container_pc-data-1">
+                            <img class="container_pc-data-image-right" src="https://product.hstatic.net/200000722513/product/20922_24e0b9d3d0704a2ab2949a65057af35a_master_d742a2f8ebf14e22a81fb9c54c68fe16_grande.jpg" alt="">
+                            <p class="container_pc-data-inf">Laptop Lenovo Ideapad Gaming 3 15IAH7 82S9006YVN</span>
+                              </a>
+                            </div>
+                              <div class="pc-information-1">
+                                <div class="money-sale container_pc-money container_pc-money_pc">
+                                    <p class="money-sale-price"><span>3.400.000</span>
+                                        <span>đ</span></p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="container_pc-right container_pc-right-bottom">
+                       <div class="all-scal">
+                        <a href="" class="container_pc-data-1">
+                            <img class="container_pc-data-image-right" src="https://product.hstatic.net/200000722513/product/acer_ek221q_h_gearvn_31a2f73e91cd4c719069ad0608a6dcec_5b288263c4dc4017aa29c4ff4bff07bd_grande.jpg" alt="">
+                            <p class="container_pc-data-inf">Laptop Lenovo Ideapad Gaming 3 15IAH7 82S9006YVN</span>
+
+                        </a>
+                       </div>
+                        <div class="pc-information-1 ">
+                            <span class="money-sale-product product-money-1">4.900.000 đ</span>
+                            <div class="money-sale container_pc-money container_pc-money_pc">
+                                <p class="money-sale-price"><span>3.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_pc-right container_pc-right-bottom">
+                        <div class="all-scal">
+                            <a href="" class="container_pc-data-1">
+                                <img class="container_pc-data-image-right" src="https://product.hstatic.net/200000722513/product/viewsonic_va2215-h_gearvn_032d5d53effc48a2887c2879e6bc5cff_dec3d4588289443ca5c2a2b5ce995e02_grande.jpg" alt="">
+                                <p class="container_pc-data-inf">Laptop Lenovo Ideapad Gaming 3 15IAH7 82S9006YVN</span>
+                                  </a>
+                        </div>
+                              <div class="pc-information-1">
+                                <div class="money-sale container_pc-money container_pc-money_pc">
+                                    <p class="money-sale-price"><span>3.400.000</span>
+                                        <span>đ</span></p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_pc">
+                
+                <i class="fa fa-circle-chevron-left fa-new-icon-1"></i>
+                <i class="fa fa-circle-chevron-right fa-new-icon-1"></i>
+                <div class="container_pc-first">
+                    <div class="container_pc-first-header">
+                        <a href="" class="container_pc-tieude">Bàn phím bán chạy</a>
+                        <div class="dash"></div>
+                        <span class="container_pc-icon">
+                            <i  class="fa-solid fa-truck container_pc-icon-i"></i>
+                            Miễn phí giao hàng
+                        </span>
+                    </div>
+                    <ul class="container_pc-ul">
+                        <li class="kaka"><a href="">ASUS</a></li>
+                        <li><a href="">ACES</a></li>
+                        <li><a href="">MSI</a></li>
+                        <li><a href="">LENOVO</a></li>
+                        <li><a href="">HP</a></li>
+                        <li><a href="">DELL</a></li>
+                        <li><a href="">LG GRAM</a></li>
+                    </ul>
+
+                    <a class="container_banner-2-link" href="#">Xem tất cả</a>
+                </div>
+                <div class="container_center-all">
+                    <div class="container_pc-center">
+                        <div class="all-scal-1">
+                            <a href="#" class="container_pc-data">
+                                <img class="container_pc-data-image" src="image/bp4.webp" alt="">
+                            </a>
+                        </div>
+                        <a class="container_pc-data-inf-header" href="" style="margin-left: 10px;">Bàn phím cơ AKKO 3098N Multi-modes Blue On White</a>
+                        <div class="pc-information">
+                            <span class="money-sale-product product-money">4.900.000 đ</span>
+                            <div class="money-sale container_pc-money">
+                                <p class="money-sale-price"><span>3.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_pc-right">
+                        <div class="all-scal">
+                            <a href="" class="container_pc-data-1">
+                                <img class="container_pc-data-image-right" src="image/bp1.webp" alt="">
+                                <p class="container_pc-data-inf">Bàn phím cơ AKKO PC98B Plus Black Gold</p>
+                                   
+                            </a>
+                        </div>
+                        <div class="pc-information-1">
+                            <span class="money-sale-product product-money-1">2.900.000 đ</span>
+                            <div class="money-sale container_pc-money container_pc-money_pc">
+                                <p class="money-sale-price"><span>1.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_pc-right">
+                        <div class="all-scal">
+                            <a href="" class="container_pc-data-1">
+                                <img class="container_pc-data-image-right" src="image/bp3.webp" alt="">
+                                <p class="container_pc-data-inf">Bàn phím cơ AKKO PC75B Plus v2 Black Gold</p>
+    
+                            </a>
+                        </div>
+                        <div class="pc-information-1">
+                            <span class="money-sale-product product-money-1">4.900.000 đ</span>
+                            <div class="money-sale container_pc-money container_pc-money_pc">
+                                <p class="money-sale-price"><span>3.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_pc-right">
+                        <div class="all-scal">
+                            <a href="" class="container_pc-data-1">
+                                <img class="container_pc-data-image-right" src="image/bp2.webp" alt="">
+                                <p class="container_pc-data-inf">Bàn phím cơ AKKO 5075B Plus Naruto</p>
+                                  </a>
+                        </div>
+                              <div class="pc-information-1">
+                                <div class="money-sale container_pc-money container_pc-money_pc">
+                                    <p class="money-sale-price"><span>3.400.000</span>
+                                        <span>đ</span></p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_sale-session8">
+                    <a href="#">
+                        <img class="container_sale-session8-img-1" src="image/mh1.webp" alt="">
+                    </a>
+                <div class="container_sale-session8-2">
+                    <a  href="">
+                        <img class="container_sale-session8-img-2" src="image/mh2.webp" alt="">
+                    </a>
+                    <a class="container_sale-session8-img-2" href="">
+                        <img class="container_sale-session8-img-2-2" src="image/mh3.webp" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="container_pc">
+                <i class="fa fa-circle-chevron-left fa-new-icon"></i>
+                <i class="fa fa-circle-chevron-right fa-new-icon"></i>
+                <div class="container_pc-first">
+                    <div class="container_pc-first-header">
+                        <a href="" class="container_pc-tieude">Laptop noi bat</a>
+                        <div class="dash"></div>
+                        <span class="container_pc-icon">
+                            <i  class="fa-solid fa-truck container_pc-icon-i"></i>
+                            Miễn phí giao hàng
+                        </span>
+                    </div>
+                    <ul class="container_pc-ul">
+                        <li class="kaka"><a href="">ASUS</a></li>
+                        <li><a href="">ACES</a></li>
+                        <li><a href="">MSI</a></li>
+                        <li><a href="">LENOVO</a></li>
+                        <li><a href="">HP</a></li>
+                        <li><a href="">DELL</a></li>
+                        <li><a href="">LG GRAM</a></li>
+                    </ul>
+
+                    <a class="container_banner-2-link" href="#">Xem tất cả</a>
+                </div>
+                <div class="container_center-all">
+                    <div class="container_pc-center">
+                       <div class="all-scal-1">
+                        <a href="#" class="container_pc-data">
+                            <img class="container_pc-data-image" src="image/lap1_1.webp" alt="">
+                        </a>
+                       </div>
+                        <a class="container_pc-data-inf-header" href="" style="text-align: start; margin-left: 10px;">Màn hình Asus TUF GAMING VG249Q1A 24" IPS 165Hz Gsync compatible chuyên game</a>
+                        <div class="pc-information" style="margin-top: 10px;">
+                            <span class="money-sale-product product-money">15.900.000 đ</span>
+                            <div class="money-sale container_pc-money">
+                                <p class="money-sale-price"><span>12.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_pc-right">
+                        <div class="all-scal">
+                            <a href="" class="container_pc-data-1">
+                                <img class="container_pc-data-image-right" src="image/lp2.webp" alt="">
+                                <p class="container_pc-data-inf" >Màn hình ASUS VZ24EHE 24" IPS 75Hz viền mỏng</span>
+                                   
+                            </a>
+                        </div>
+                        <div class="pc-information-1">
+                            <span class="money-sale-product product-money-1">4.900.000 đ</span>
+                            <div class="money-sale container_pc-money container_pc-money_pc">
+                                <p class="money-sale-price"><span>3.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-23%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_pc-right">
+                        <div class="all-scal">
+                            <a href="" class="container_pc-data-1">
+                                <img class="container_pc-data-image-right" src="image/lp3.webp" alt="">
+                                <p class="container_pc-data-inf">Laptop Lenovo Ideapad Gaming 3 15IAH7 82S9006YVN</span>
+    
+                            </a>
+                        </div>
+                        <div class="pc-information-1">
+                            <span class="money-sale-product product-money-1">14.900.000 đ</span>
+                            <div class="money-sale container_pc-money container_pc-money_pc">
+                                <p class="money-sale-price"><span>13.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-13%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_pc-right">
+                        <div class="all-scal">
+                            <a href="" class="container_pc-data-1">
+                                <img class="container_pc-data-image-right" src="image/lp4.webp" alt="">
+                                <p class="container_pc-data-inf">Màn hình ASUS VA24EHF 24" IPS 100Hz viền mỏng</span>
+                                  </a>
+                        </div>
+                              <div class="pc-information-1">
+                                <div class="money-sale container_pc-money container_pc-money_pc">
+                                    <p class="money-sale-price"><span>4.400.000</span>
+                                        <span>đ</span></p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="container_pc-right container_pc-right-bottom">
+                       <div class="all-scal">
+                        <a href="" class="container_pc-data-1">
+                            <img class="container_pc-data-image-right" src="https://product.hstatic.net/200000722513/product/va24ehf-01__1__638b4596c8884c66819eca6cfb4e9750_grande.jpg" alt="">
+                            <p class="container_pc-data-inf">Laptop Lenovo Ideapad Gaming 3 15IAH7 82S9006YVN</span>
+                               
+                        </a>
+                       </div>
+                        <div class="pc-information-1">
+                            <span class="money-sale-product product-money-1">4.900.000 đ</span>
+                            <div class="money-sale container_pc-money container_pc-money_pc">
+                                <p class="money-sale-price"><span>3.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_pc-right container_pc-right-bottom">
+                       <div class="all-scal">
+                        <a href="" class="container_pc-data-1">
+                            <img class="container_pc-data-image-right" src="image/lp5.webp" alt="">
+                            <p class="container_pc-data-inf">Màn hình MSI OPTIX G274 27" IPS 170Hz G-Sync chuyên game</span>
+
+                        </a>
+                       </div>
+                        <div class="pc-information-1">
+                            <span class="money-sale-product product-money-1">7.900.000 đ</span>
+                            <div class="money-sale container_pc-money container_pc-money_pc">
+                                <p class="money-sale-price"><span>4.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_pc-right container_pc-right-bottom">
+                       <div class="all-scal">
+                        <a href="" class="container_pc-data-1">
+                            <img class="container_pc-data-image-right" src="image/lp7.webp" alt="">
+                            <p class="container_pc-data-inf">Màn hình HKC MG27H7F 27" Fast IPS 165Hz Gsync</span>
+                              </a>
+                       </div>
+                              <div class="pc-information-1">
+                                <div class="money-sale container_pc-money container_pc-money_pc">
+                                    <p class="money-sale-price"><span>5.400.000</span>
+                                        <span>đ</span></p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="container_pc-right container_pc-right-bottom">
+                      <div class="all-scal">
+                        <a href="" class="container_pc-data-1">
+                            <img class="container_pc-data-image-right" src="image/lp8_1.webp" alt="">
+                            <p class="container_pc-data-inf">Laptop Lenovo Ideapad Gaming 3 15IAH7 82S9006YVN</span>
+
+                        </a>
+                      </div>
+                        <div class="pc-information-1 ">
+                            <span class="money-sale-product product-money-1">16.900.000 đ</span>
+                            <div class="money-sale container_pc-money container_pc-money_pc">
+                                <p class="money-sale-price"><span>12.400.000</span>
+                                    <span>đ</span></p>
+                                    <span class="money-sale-reduce">-33%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_pc-right container_pc-right-bottom">
+                      <div class="all-scal">
+                        <a href="" class="container_pc-data-1">
+                            <img class="container_pc-data-image-right" src="image/lp9.webp" alt="">
+                            <p class="container_pc-data-inf">Màn hình ASUS VA27EHF 27" IPS 100Hz viền mỏng</span>
+                              </a>
+                      </div>
+                              <div class="pc-information-1">
+                                <div class="money-sale container_pc-money container_pc-money_pc">
+                                    <p class="money-sale-price"><span>3.400.000</span>
+                                        <span>đ</span></p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_promotion">
+                <div class="container_promotion-first">
+                    <a href=""><h1>Danh mục sản phẩm</h1></a>
+                    <div class="my-div-1"></div>
+                    <div class="container-item">
+                        <a href="categoryProduct.html" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp1.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Laptop</span>
+                             </div>
+                        </a>
+                        <a href="categoryProduct.html" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp2.webp" alt="">
+                             <div class="container-item-icon-inf">
+                                <span>Apple</span>
+                             </div>
+                        </a>
+                        <a href="categoryProduct.html" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp3.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>PC</span>
+                             </div>
+                        </a>
+                        <a href="categoryProduct.html" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp4.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Màn hình</span>
+                             </div>
+                        </a>
+                        <a href="categoryProduct.html" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp5.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Mainboard</span>
+                             </div>
+                        </a>
+                        <a href="categoryProduct.html" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp6.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>CPU</span>
+                             </div>
+                        </a>
+                        <a href="categoryProduct.html" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp7.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Case</span>
+                             </div>
+                        </a>
+                        <a href="categoryProduct.html" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp8.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Tản nhiệt</span>
+                             </div>
+                        </a>
+                        <a href="#" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp9.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Nguồn</span>
+                             </div>
+                        </a>
+                        <a href="#" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp10.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Loa</span>
+                             </div>
+                        </a>
+                        <a href="#" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp11.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>SSD</span>
+                             </div>
+                        </a>
+                        <a href="#" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp12.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>HHD</span>
+                             </div>
+                        </a>
+                        <a href="#" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp13.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>RAM</span>
+                             </div>
+                        </a>
+                        <a href="#" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp14.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Bàn phím</span>
+                             </div>
+                        </a>
+                        <a href="#" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp15.jpg" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Chuột</span>
+                             </div>
+                        </a>
+                        <a href="#" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp16.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Tai nghe</span>
+                             </div>
+                        </a>
+                        <a href="#" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp17.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Ghế</span>
+                             </div>
+                        </a>
+                        <a href="#" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp18.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Console</span>
+                             </div>
+                        </a>
+                        <a href="#" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp19.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Phụ kiện</span>
+                             </div>
+                        </a>
+                        <a href="#" class="container-item-icon">
+                            <img class="container-item-icon-img" src="image/sp20.webp" alt="">
+                            <div class="container-item-icon-inf">
+                                <span>Thiết bị VP</span>
+                             </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container_promotion">
+                <div class="container_promotion-first">
+                    <h1>Chuyên trang khuyến mãi</h1>
+                    <div class="container_promotion-first-sp">
+                       <a href="" class="container_promotion-first-sp-img">
+                        <img class="sp-img" src="image/page_sale1.webp" alt="">
+                       </a>
+                       <a href="" class="container_promotion-first-sp-img">
+                        <img class="sp-img" src="image/page_sale_2.webp" alt="">
+                        
+                       </a>
+                       <a href="" class="container_promotion-first-sp-img">
+                        <img class="sp-img" src="image/page_sale3.webp" alt="">
+                       </a>
+                       <a href="" class="container_promotion-first-sp-img">
+                        <img class="sp-img" src="image/page_sale4.webp" alt="">
+                       </a>
+                    </div>
+                </div>
+                <div class="my-div"></div>
+                <div class="container_promotion-first">
+                    <div class="container_promotion-first-header">
+                        <h1>Tin tức công nghệ</h1>
+                        <a href="#">Xem tất cả</a>
+                    </div>
+                    <div class="container_promotion-first-sp">
+                       <a href="" class="container_promotion-first-sp-img">
+                        <img class="sp-img" src="image/page_sale5.webp" alt="">
+                        <p class="container_promotion-first-sp-img-p">Final Fantasy XVI:Sự thay đổi mới trong cốt truyện & gameplay?</p>
+                       </a>
+                       <a href="" class="container_promotion-first-sp-img">
+                        <img class="sp-img" src="image/page_sale6.webp" alt="">
+                        <p class="container_promotion-first-sp-img-p">Bản thiết kế vĩ đại Samsung Odyssey OLED G9 Gaming đã lộ diện</p>
+                       </a>
+                       <a href="" class="container_promotion-first-sp-img">
+                        <img class="sp-img" src="image/page_sale7.webp" alt="">
+                        <p class="container_promotion-first-sp-img-p">[Lenovo Inoovate] Lenovo ra mắt loạt laptop, màn hình cao cấp</p>
+                       </a>
+                       <a href="" class="container_promotion-first-sp-img">
+                        <img class="sp-img" src="image/page_sale8.webp" alt="">
+                        <p class="container_promotion-first-sp-img-p">[Computerx 2023] MSI trở lại với màn kết hợp mạnh mẽ cùng Mercedes-AMG</p>
+                       </a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="container_banner">
+                <img class="container_banner-img" src="image/ban_dongame.webp" alt="">
+            </div>
+            <div class="container_banner-2">
+                <div class="container_banner-inf">
+                    <div class="container_banner-header">
+                    <div >
+                        <i class="fa-solid fa-check container_banner-2-i">
+                            
+                        </i>
+                        <a href=""><span class="container_banner-header-span">Thương hiệu nổi bật</span></a>
+                    </div>
+                    <a class="container_banner-2-link" href="#">Xem tất cả</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="container_banner-con">
+                   <div class="container_banner-con-img">
+                    <a href="#" >
+                        <img src="image/bn_acess.webp" alt="">
+                    </a>
+                   </div>
+                   <div class="container_banner-con-img">
+                    <a href="#" >
+                        <img src="image/amd.webp" alt="">
+                    </a>
+                   </div>
+                   <div class="container_banner-con-img">
+                    <a href="#" >
+                        <img src="image/ban_acer.webp" alt="">
+                    </a>
+                   </div>
+                   <div class="container_banner-con-img">
+                    <a href="#" >
+                        <img src="image/ban_con.webp" alt="">
+                    </a>
+                   </div>
+                   <div class="container_banner-con-img">
+                    <a href="#" >
+                        <img src="image/ban_gig.webp" alt="">
+                    </a>
+                   </div>
+                   <div class="container_banner-con-img">
+                    <a href="#" >
+                        <img src="image/ban_hayper.webp" alt="">
+                    </a>
+                   </div>
+                   <div class="container_banner-con-img">
+                    <a href="#" >
+                        <img src="image/ban_intel.webp" alt="">
+                    </a>
+                   </div>
+                   <div class="container_banner-con-img">
+                    <a href="#" >
+                        <img src="image/ban_king.webp" alt="">
+                    </a>
+                   </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_header">
+                <ul class="footer_header-ul">
+                    <li><h4>VỀ GEARVN</h3></li>
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Tuyển dụng</a></li>
+                </ul>
+                <ul class="footer_header-ul">
+                    <li><h4>CHÍNH SÁCH</h3></li>
+                    <li><a class="footer_header-link" href="">Chính sách bảo hành</a></li>
+                    <li><a class="footer_header-link" href="">Chính sách thanh toán</a></li>
+                    <li><a class="footer_header-link" href="">Chính sách giao hàng</a></li>
+                    <li><a class="footer_header-link" href="">Chính sách bảo mật</a></li>
+                </ul>
+                <ul class="footer_header-ul">
+                    <li><h4>THÔNG TIN</h3></li>
+                    <li><a class="footer_header-link" href="">Hệ thống của hàng</a></li>
+                    <li><a class="footer_header-link" href="">Trung tâm bảo hành</a></li>
+                </ul>
+                <ul class="footer_header-ul">
+                    <li><h4>TỔNG ĐÀI HỘ TRỢ</h3></P></li>
+                    <li><span class="footer_header-span">Gọi mua:  <a class="footer_header-link-1" href="">1800.6975</a>(8.00-21.00)</span></li>
+                    <li><span  class="footer_header-span">CSKH: <a style="margin-left: 12px;" class="footer_header-link-1" href="">1800.6173</a>(8:00-21:00)</span></li>
+                    <li><span class="footer_header-span">Email: <a style="margin-left: 16px;" class="footer_header-link-1" href="">cskh@gearvn.com</a></span></li>
+                </ul>
+                <div class="footer_header_driver">
+                    <h4>ĐƠN VỊ VẬN CHUYỂN</h3>
+                    <div class="header_header_driver-show">
+                        <img class="header_show-img" src="image/ghn.webp" alt="">
+                        <img class="header_show-img" src="image/ems.webp" alt="">
+                        <img class="header_show-img" src="image/gvn1.webp" alt="">
+                        <img class="header_show-img" src="image/gvn.webp" alt="">
+                    </div>
+                    <h4>CÁCH THỨC THANH TOÁN</h3>
+                    <div class="header_header_driver-show">
+                        <img class="header_show-img" src="image/hand.webp" alt="">
+                        <img class="header_show-img" src="image/jcb.webp" alt="">
+                        <img class="header_show-img" src="image/master.webp" alt="">
+                        <img class="header_show-img" src="image/zalopay.webp" alt="">
+                        <img class="header_show-img" src="image/money.webp" alt="">
+                        <img class="header_show-img" src="image/tragop.webp" alt="">
+                        <img class="header_show-img" src="image/visa.webp" alt="">
+                        <img class="header_show-img" src="image/momo.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_banner">
+                <div class="footer_banner-left">
+                    <h4>KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    <a href=""><i class="fa-brands fa-facebook  footer-icon footer-icon-1"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok footer-icon footer-icon-2"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube footer-icon footer-icon-3"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram footer-icon footer-icon-4"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter footer-icon footer-icon-5"></i></a>
+                </div>
+                <div class="footer_banner-right">
+                    <a href=""><img src="image/notifice.webp" alt="" class="footer_banner-right-img"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    <script src="js/index.js">
+   
+    </script>
+    
+</body>
+</html>

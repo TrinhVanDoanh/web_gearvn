@@ -1,0 +1,949 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #ececec;
+    scrollbar-width: none;
+    max-width: 1365px;
+    margin: 0px auto;
+}
+body {
+    -ms-overflow-style: none; /* khai báo sử dụng Internet Explorer, Edge */
+    scrollbar-width: none; /* sử dụng Firefox */
+    overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+    display: none; /* cho Chrome, Safari, and Opera */
+}
+
+    * {
+        box-sizing: inherit;
+        font-family: "SF Pro Display", 'Arial', sans-serif;
+    }
+
+    #header {
+        background-color:#23282e;
+        position: relative;
+        top:0px;
+    }
+
+    .header_top {
+        margin: 0 80px;
+        height: 62px;
+    }
+
+    .header__image-royally {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header__content-list {  
+        width: 100%;
+        background-color: #e30019;
+        color: #ffffff;
+        height: 75px;
+        position: relative;
+    }
+
+    .header__content-main {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 70px;
+        margin-right: 70px;
+       
+    }
+
+    .header__content-logo {
+        width: 130px;
+    }
+
+    .header_seach-input {
+        width: 400px;
+        height: 41px;
+        outline: none;
+        border-radius: 3px;
+        border: none;
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+
+    .header_seach {
+        position: relative;
+        height: 42px;
+    }
+
+    .header__content-seach-icon {
+        position: absolute;
+        right: 15px;
+        top:50%;
+        color: #000000;
+        transform: translateY(-25%);
+    }
+    
+    
+
+    .header__content-item a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 10px; 
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .header__content-icon {
+        margin: 0 12px;
+        font-size: 1rem;
+    }
+
+    .header__content-category {
+        border: 1px solid transparent;
+        background-color: #be1529;
+        border-radius: 4px;
+        margin: 0px 10px 0px 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.9rem;
+        font-weight: 500;
+        width: 150px;
+        height: 42px;
+    }
+
+    .header__content-login {
+        display: flex;
+        align-items: center;
+        border: 1px solid transparent;
+        background-color: #be1529;
+        border-radius: 4px;
+        width: 120px;
+        height: 45px;
+        margin-left: 10px;
+    }
+
+    .header__content-list.header__content-fixed{
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+
+    .nav_bar {
+        background-color: #ffffff;
+        height: 40px;
+    }
+
+
+    .nav_bar-list {
+        list-style: none;
+        display: flex;
+        margin-left: 110px;
+        margin-right: 110px;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        margin-top: 0px;
+    }
+
+    .nav_bar-link {
+        text-decoration: none;
+        font-size: 0.8rem;
+        color: #111111;
+        font-weight: 600;
+        border-right: 1px solid #cfcfcf;
+        padding-right: 34px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .nav_bar-link.no_border-right {
+        border: none;
+    }
+
+    /* Phần giữa */
+    .container_title {
+        height: 54px;
+        margin: 0 84px;
+        line-height: 54px;
+    }
+
+    .container_title a {
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 550;
+        color: #1982f9;
+    }
+
+    .container_main {
+        width: 1200px;
+        margin-left: 84px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        height: 1868px;
+        overflow: hidden;
+    }
+
+    .colections_filter {
+        position: relative;
+    }
+
+    .colections_filter-list {
+        list-style: none;
+        display: flex;
+        padding-top: 24px;
+        padding-left: 0px;
+        margin-left: 30px;
+        position: relative;
+    }
+
+    .colections_filter.colections_filter-fixed {
+        position: fixed;
+        top: 45px;
+        z-index: 8;
+        background-color: #ffffff;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+
+    .colections_filter-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Màu nền của overlay, ở đây là màu đen với độ trong suốt 50% */
+        z-index: 5; /* Đảm bảo overlay hiển thị trên các phần tử khác */
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .colections_filter-overlay.colections_filter-overlay-active {
+        display: flex;
+    }
+   
+    .colections_filter-item {
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid #cfcfcf;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        position: relative;
+    }
+    .colections_filter-item.colections_filter-item-active {
+        z-index: 6;
+    }
+    
+    .colections_filter-item:first-child {
+        margin-left: 25px;
+    }
+
+    .button-filter {
+        text-decoration: none;
+        color: #111111; 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-left: 10px;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+
+    .colections_filter-item-filter.activeAfter::after {
+        content: '';
+        border-width: 10px 10px;
+        border-style: solid;
+        border-color: transparent transparent #ffffff transparent;
+        position: absolute;
+        top: 27px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .button-filter:first-child {
+        margin-right: 10px;
+    }
+
+   
+
+    .colections_filter-item:first-child  {
+        margin-left: 0px;
+    } 
+    .colections_filter-item:first-child i {
+        transform: translateY(0%);
+        margin: 0px 10px 0px 0px;
+    }
+    .colections_filter-item i {
+        transform: translateY(-20%);
+        font-size: 0.8rem;
+        margin: 0px 0px 0px 10px;
+    }
+
+    /* Phần lọc sản phẩm */
+    .filter_main {
+        width: 900px;
+        background-color: #ffffff;
+        z-index: 7;
+        position: absolute;
+        top: 318px;
+        padding-left: 24px;
+        border: 1px solid #cfcfcf;
+        font-size: 0.85rem;
+        height: 590px;
+        overflow: scroll;
+       display: none;
+    }
+
+    .filter_main.filter_main-active {
+        display: block;
+    }
+
+    /* Phần lọc theo hãng */
+    .colections_filter-item-vendor.activeAfter::after,
+    .colections_filter-item-cpu.activeAfter::after,
+    .colections_filter-item-producttype.activeAfter::after,
+    .colections_filter-item-screensize.activeAfter::after,
+    .colections_filter-item-ram.activeAfter::after,
+    .colections_filter-item-ssd.activeAfter::after,
+    .colections_filter-item-vga.activeAfter::after {
+        content: '';
+        border-width: 10px 10px;
+        border-style: solid;
+        border-color: transparent transparent #ffffff transparent;
+        position: absolute;
+        top: 27px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+    }
+    .vendor-main {
+        width: 561px;
+        z-index: 2;
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2),
+        -5px 0px 5px rgba(0, 0, 0, 0.2),
+        5px 0px 5px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff; 
+        position: absolute;
+        left: -12px;
+        top: 120%;
+        display: none;
+    }
+
+    .cpu-main {
+        width: 561px;
+        z-index: 2;
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2),
+        -5px 0px 5px rgba(0, 0, 0, 0.2),
+        5px 0px 5px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff; 
+        position: absolute;
+        left: -12px;
+        top: 120%;
+        display: none;
+    }
+
+    .producttype-main {
+        width: 561px;
+        z-index: 2;
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2),
+        -5px 0px 5px rgba(0, 0, 0, 0.2),
+        5px 0px 5px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff; 
+        position: absolute;
+        left: -12px;
+        top: 120%;
+        display: none;
+    }
+
+    .screensize-main {
+        width: 561px;
+        z-index: 2;
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2),
+        -5px 0px 5px rgba(0, 0, 0, 0.2),
+        5px 0px 5px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff; 
+        position: absolute;
+        left: -12px;
+        top: 120%;
+        display: none;
+    }
+
+    .ram-main {
+        width: 561px;
+        z-index: 2;
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2),
+        -5px 0px 5px rgba(0, 0, 0, 0.2),
+        5px 0px 5px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff; 
+        position: absolute;
+        left: -12px;
+        top: 120%;
+       display: none;
+    }
+
+
+    .ssd-main {
+        width: 561px;
+        z-index: 2;
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2),
+        -5px 0px 5px rgba(0, 0, 0, 0.2),
+        5px 0px 5px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff; 
+        position: absolute;
+        left: -12px;
+        top: 120%;
+        display: none;
+    }
+
+    .vga-main {
+        width: 561px;
+        z-index: 2;
+        box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2),
+        -5px 0px 5px rgba(0, 0, 0, 0.2),
+        5px 0px 5px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff; 
+        position: absolute;
+        left: -12px;
+        top: 120%;
+        display: none;
+    }
+
+   
+
+   
+
+    .vendor-list,
+    .cpu-list,
+    .producttype-list,
+    .screensize-list,
+    .ram-list,
+    .ssd-list,
+    .vga-list {
+        list-style: none;
+        display: flex;
+        margin: 10px 0px 20px 0px;
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+    .vendor-item,
+    .cpu-item,
+    .producttype-item,
+    .screensize-item,
+    .ram-item,
+    .ssd-item,
+    .vga-item {
+        height: 36px;
+        border: 1px solid #cfcfcf;
+        border-radius: 2px;
+        margin-right: 10px;
+        line-height: 36px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 0.8rem;
+    }
+
+    .vendor-item:hover {
+        border: 1px solid #1982f9;
+        color: #1982f9;
+        cursor: pointer;
+    }
+
+    .vendor-item span ,
+    .cpu-item span ,
+    .producttype-item span ,
+    .screensize-item span ,
+    .ram-item span ,
+    .ssd-item span ,
+    .vga-item span {
+        margin: 0px 10px;
+    }
+   
+    .verdor_footer,
+    .cpu_footer,
+    .producttype_footer,
+    .screensize_footer,
+    .ram_footer,
+    .ssd_footer,
+    .vga_footer {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .filter_header {
+        display: flex;
+        height: 26px;
+        line-height: 26px;
+        padding-top: 15px ;
+        justify-content: space-between;
+    }
+
+    .filter_header-sortby {
+        border: 1px solid #cfcfcf;
+        border-radius: 3px;
+        margin: 0px 15px;
+    }
+
+    .filter_header-sortby span {
+        margin: 0px 5px;
+    }
+
+    .filter_header-sortby i {
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    .filter_header-remove a {
+        color: blue;
+        border-bottom: 1px solid blue;
+        text-decoration: none;
+    }
+
+    .filter_row1 {
+        margin-top: 34px;
+    }
+
+    .filter_close {
+       width: 73px;
+       height: 40px;
+       margin-right: 20px;
+       border: 1px solid #cfcfcf;
+       border-radius: 3px;
+       text-align: center;
+       line-height: 40px;
+       cursor: pointer;
+
+    }
+
+    .filter-vendor-list,
+    .filter-cpu-list,
+    .filter-producttype-list,
+    .filter-screensize-list,
+    .filter-ram-list,
+    .filter-ssd-list,
+    .filter-vga-list {
+        list-style: none;
+        display: flex;
+        margin: 10px 0px 20px 0px;
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+
+    .filter-vendor-item,
+    .filter-cpu-item,
+    .filter-producttype-item,
+    .filter-screensize-item,
+    .filter-ram-item,
+    .filter-ssd-item {
+        height: 36px;
+        border: 1px solid #cfcfcf;
+        border-radius: 2px;
+        margin-right: 10px;
+        line-height: 36px;
+        cursor: pointer;
+    }
+
+    .filter-vendor-item:hover,
+    .filter-cpu-item:hover,
+    .filter-producttype-item:hover,
+    .filter-screensize-item:hover,
+    .filter-ram-item:hover,
+    .filter-ssd-item:hover,
+    .filter-vga-item:hover {
+        border: 1px solid #1982f9;
+        color: #1982f9;
+        cursor: pointer;
+    }
+
+    .filter_item-select {
+        border: 1px solid #1982f9;
+        color: #1982f9;
+        font-weight:700 ;
+    }
+
+    .filter-vga-item {
+        height: 36px;
+        border: 1px solid #cfcfcf;
+        border-radius: 2px;
+        margin-right: 10px;
+        line-height: 36px;
+        margin-bottom: 10px ;
+        cursor: pointer;
+    }
+
+    .filter-vendor-item span,
+    .filter-cpu-item span,
+    .filter-producttype-item span,
+    .filter-screensize-item span,
+    .filter-ram-item span,
+    .filter-ssd-item span,
+    .filter-vga-item span {
+        margin: 0px 10px
+    }
+
+    .filter_row2 ,
+    .filter_row3 {
+        display: flex;
+        border-top: 1px solid #cfcfcf;
+    }
+
+    .filter_row2-item ,
+    .filter_row3-item {
+        margin-top: 10px;
+        width: 33.3%;
+    }
+
+    .filter_price-list {
+        display: flex;
+        height: 26px;
+        line-height: 26px;
+        align-items: center;
+    }
+
+    .filter_price-min ,
+    .filter_price-max {
+        border: 1px solid #cfcfcf;
+        border-radius: 3px;
+        margin-top: 10px;
+    }
+
+    .filter_price-min span ,
+    .filter_price-max span {
+        margin: 0px 15px;
+    }
+
+    .filter_price-line {
+        width: 64px;
+        height: 1px;
+        background-color: #cfcfcf;
+    }
+
+    .range_slide {
+        display: flex;
+        align-items: center;
+        height:  25px;
+        margin-top: 15px;
+    }
+
+    .range_slide-min ,
+    .range_slide-max {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: rgb(165, 243, 165);
+    }
+
+    .range_slide-line {
+        width: 230px;
+        height: 3px;
+        background-color: rgb(15, 207, 15);
+    }
+
+    .filter_footer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    .unselection {
+        margin-right: 10px;
+        border: 1px solid #e30019;
+        border-radius: 3px;
+        height: 30px;
+        width: 140px;
+        color: #e30019;
+    }
+
+    .see_result {
+        border-radius: 3px;
+        height: 30px;
+        width: 140px;
+        background-color: #1982f9;
+        color: #ffffff;
+        border: none;
+        outline: none;
+    }
+
+    /* Hết phần lọc sản phẩm */
+
+    /* Sắp xếp sản phẩm */
+    .container_listbox {
+        height: 32px;
+        min-width: 185px;
+        font-size: 0.85rem;
+        border: 1px solid #cfcfcf;
+        border-radius: 3px;
+        float: right;
+        line-height: 32px;
+        margin-right: 30px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .container_listbox i:first-child {
+        margin-left: 12px;
+        margin-right: 5px;
+    }
+
+    .container_listbox i:last-child {
+       margin: 0px 10px;
+       transform: translateY(-25%);
+    }
+
+    .listbox_colections {
+        position: absolute;
+        width: 168px;
+        height: 100px;
+        border: 1px solid #cfcfcf;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 10px #ccc;
+        z-index: 2;
+        top:37px;
+        display: none;
+    }
+
+    .listbox_colections.presently {
+        display: block;
+    }
+
+    .listbox_colections-item {
+        padding-left: 10px;
+        cursor: pointer;
+    }
+
+    .listbox_colections-item:hover {
+        background-color: rgb(223, 241, 253);
+    }
+    /* Hết phần sắp xếp sản phẩm */
+    /* Phần nội dung */
+    .container_content {
+        margin-top: 67px;
+    }
+
+    .container_content-list {
+        display: grid;
+        grid-template-columns: 228px 228px 228px 228px 228px;
+        grid-template-rows: 415px 415px;
+        grid-gap:10px;
+        padding:  10px;
+        grid-template-areas: 
+        "h1 h1 h2 h3 h4"
+        "h5 h6 h7 h8 h9";
+    }
+
+    .container_content-item {
+        border: 1px solid #cfcfcf;
+        border-radius: 5px;
+    } 
+
+    .container_content-item:first-child {
+        grid-area: h1;
+    }
+
+    .container_content-item:nth-child(2) {
+        grid-area: h2;
+    }
+    .container_content-item:nth-child(3) {
+        grid-area: h3;
+    }
+    .container_content-item:nth-child(4) {
+        grid-area: h4;
+    }
+    .container_content-item:nth-child(5) {
+        grid-area: h5;
+    }
+    .container_content-item:nth-child(6) {
+        grid-area: h6;
+    }
+    .container_content-item:nth-child(7) {
+        grid-area: h7;
+    }
+    .container_content-item:nth-child(8) {
+        grid-area: h8;
+    }
+    .container_content-item:nth-child(9) {
+        grid-area: h9;
+    }
+
+    .container_content-img {
+        height: 210px;
+        max-width:208px;
+        object-fit: cover;
+        margin: 45px 10px;
+        overflow: hidden;
+    }
+
+    .container_content-img_big{
+        max-width: 445px;
+    }
+
+    .content-img-zoom {
+        max-width: 100%;
+        transition: all 2s ease-in-out;
+    }
+
+    .content-img-zoom img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-img-zoom:hover {
+        transform: scale(1.2);
+    }
+
+    .name-product {
+        text-overflow: ellipsis;
+        line-height: 1.7;
+    }
+
+    .container_content-text {
+        height: 90px;
+        margin: 0px 15px 30px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .cost {
+        font-size: 0.9rem;
+        color: #ccc;
+        text-decoration: line-through;
+    }
+
+    .price-product {
+        font-size: 1rem;
+        color: #e30019; 
+    }
+
+    .reduced-price-and-sale {
+        display: flex;
+    }
+
+    .label-on-sale {
+        width: 40px;
+        height: 15px;
+        font-size: 0.9rem;
+        border: 1px solid #e30019;
+        border-radius: 1px;
+        margin-left: 10px;
+        text-align: center;
+        background-color: #f8eaeb;
+        line-height: 15px;
+        font-weight: 500;
+    }
+    /* Hết phần nội dung */
+
+    /* Xem thêm */
+    .load_more {
+        width: 270px;
+        height: 36px;
+        text-align: center;
+        margin: 15px 0px;
+        border: none;
+        outline: none;
+        background-color: #ffffff;
+        border-radius: 3px;    
+        cursor: pointer;
+    }
+    /* Hết phần xem thêm */
+    /* Hết phần giữa */
+/* Phần Cuối */
+
+    .footer {
+        margin-top: 24px;
+        background-color: #ffffff;
+    }
+    .footer-main {
+        margin: 0 82px ;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .grid__column-2 {
+        width: 20%;
+    }
+
+    .footer-content {
+        font-size:0.9rem;   
+        color: #111111;
+    }
+
+    .footer-content a {
+        font-size:0.9rem;
+        text-decoration: none;
+        color: #111111;
+    }
+
+    .footer-content a:hover {
+        text-decoration: underline;
+        color: #e30019;
+    }
+
+    .footer-content-hottline a {
+        font-size:0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: #1982f9;
+    }
+    .footer-content-hottline a:hover {
+        font-size:0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: #1982f9;
+    }
+
+    .footer-ship {
+        margin-left: 40px;
+    }
+
+    .footer-image {
+        width: 50px;
+    }
+
+    .footer-line {
+        border: 1px solid #cfcfcf;
+        margin: 30px 82px ;
+    }
+
+    .connect {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        background-color: #ffffff;
+        margin: 0px 82px;       
+    }
+
+    .connect_left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .connect_title {
+        margin-right: 10px;
+    }
+    .connect-image {
+        width: 32px;
+        height: 32px;
+        margin: 0px 8px;
+    }
+
+    .connect_right-img {
+        width: 150px;
+    }
+    .d-block {
+        display: block !important;
+    }

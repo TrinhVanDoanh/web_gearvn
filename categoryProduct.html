@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assest/css/categoryProduct.css">
+    <title>Danh mục sản phẩm</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_top">
+            <img class="header__image-royally" src="./assest/image/rog_ally_0865a5bf20c74bbdbbf0ea15bad87f66.webp"
+                alt="">
+        </div>
+        <div class="header__content-list">
+            <div class="header__content-main">
+                <a href="index.html"><img class="header__content-logo"
+                        src="./assest/image/logo_fd11946b31524fbe98765f34f3de0628.svg" alt=""></a>
+                <div class=" header__content-item header__content-category ">
+                    <a href="">
+                        <div class="header__content-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <div class="header__content-category-text">
+                            Danh mục
+                        </div>
+                    </a>
+                </div>
+                <div class="header__content-item">
+                    <div class="header_seach">
+                        <input type="text" placeholder="Bạn cần gì?" class="header_seach-input">
+                        <div class="header__content-seach-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__content-item">
+                    <a href="">
+                        <div class="header__content-icon">
+                            <i class="fa-solid fa-headphones"></i>
+                        </div>
+                        <div class="header__content-hotline-text">
+                            Hotline 1800.6975
+                        </div>
+                    </a>
+                </div>
+                <div class="header__content-item">
+                    <a href="systemshowroom.html" target="_blank">
+                        <div class="header__content-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="header__content-system-text">
+                            Hệ thống Showroom
+                        </div>
+                    </a>
+                </div>
+                <div class="header__content-item">
+                    <a href="">
+                        <div class="header__content-icon">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <div class="header__content-seachforhelp-text">
+                            Tra cứu đơn hàng
+                        </div>
+                    </a>
+                </div>
+                <div class="header__content-item">
+                    <a href="cart.html">
+                        <div class="header__content-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="header__content-cart-text">
+                            Giỏ hàng
+                        </div>
+                    </a>
+                </div>
+                <div class="header__content-item header__content-login">
+                    <a href="">
+                        <div class="header__content-icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="header__content-login-text">
+                            Đăng nhập
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="nav_bar">
+            <ul class="nav_bar-list">
+                <li class="nav_bar-item">
+                    <a class="nav_bar-link" href="#">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>Tổng hợp khuyến mãi</span>
+                    </a>
+                </li>
+                <li class="nav_bar-item">
+                    <a class="nav_bar-link" href="#">
+                        <i class="fa-regular fa-newspaper"></i>
+                        <span>Tin công nghệ</span>
+                    </a>
+                </li>
+                <li class="nav_bar-item">
+                    <a class="nav_bar-link" href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>Video</span>
+                    </a>
+                </li>
+                <li class="nav_bar-item">
+                    <a class="nav_bar-link" href="#">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <span>Hướng dẫn thanh toán</span>
+                    </a>
+                </li>
+                <li class="nav_bar-item">
+                    <a class="nav_bar-link" href="#">
+                        <i class="fa-solid fa-coins"></i>
+                        <span>Hướng dẫn trả góp</span>
+                    </a>
+                </li>
+                <li class="nav_bar-item">
+                    <a class="nav_bar-link no_border-right" href="#">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Chính sách bảo hành</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+        <div class="container_title">
+            <span><a href=""><i class="fa-solid fa-house" style="margin-right: 5px;"></i>Trang chủ</a><span
+                    style="margin: 0px 15px;">/</span>Laptop</span>
+        </div>
+        <div class="container_main">
+            <div id="colections_filter-overlay" class="colections_filter-overlay"></div>
+            <div class="colections_filter">
+                <ul class="colections_filter-list">
+                    <li class="colections_filter-item colections_filter-item-filter">
+                        <div class="colections-filter">
+                            <div class="button-filter">
+                                <div> <i class="fa-solid fa-filter"></i></div>
+                                <div>Bộ lọc</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="colections_filter-item colections_filter-item-vendor">
+                        <div id="colections-vendor" class="colections-vendor" onclick="onclickFilter(this)">
+                            <div class="button-filter">
+                                <div>Hãng</div>
+                                <div> <i class="fa-solid fa-sort-down"></i></div>
+                            </div>
+                        </div>
+                        <!-- Phần Hãng -->
+                        <div class="vendor-main list-filter ">
+                            <ul class="vendor-list">
+                                <li class="vendor-item"><span>ACER</span></li>
+                                <li class="vendor-item"><span>ASUS</span></li>
+                                <li class="vendor-item"><span>DELL</span></li>
+                                <li class="vendor-item"><span>GIGABYTE</span></li>
+                                <li class="vendor-item"><span>Không thương hiệu</span></li>
+                                <li class="vendor-item"><span>LENOVO</span></li>
+                                <li class="vendor-item"><span>LG</span></li>
+                                <li class="vendor-item"><span>MSI</span></li>
+                            </ul>
+                            <div class="verdor_footer">
+                                <div class="button">
+                                    <button class="unselection">Bỏ chọn</button>
+                                    <button class="see_result">Xem kết quả</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="colections_filter-item colections_filter-item-cpu">
+                        <div id="colections-cpu" class="colections-cpu" onclick="onclickFilter(this)">
+                            <div class="button-filter">
+                                <div>CPU</div>
+                                <div> <i class="fa-solid fa-sort-down"></i></div>
+                            </div>
+                        </div>
+                        <!-- Phần CPU -->
+                        <div class="list-filter cpu-main ">
+                            <ul class="cpu-list">
+                                <li class="cpu-item"><span>INTEL</span></li>
+                                <li class="cpu-item"><span>AMD</span></li>
+
+                            </ul>
+                            <div class="cpu_footer">
+                                <div class="button">
+                                    <button class="unselection">Bỏ chọn</button>
+                                    <button class="see_result">Xem kết quả</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="colections_filter-item colections_filter-item-producttype">
+                        <div id="colections-product" class="colections-product" onclick="onclickFilter(this)">
+                            <div class="button-filter">
+                                <div>Loại sản phẩm</div>
+                                <div> <i class="fa-solid fa-sort-down"></i></div>
+                            </div>
+                        </div>
+                        <!-- Phần loại sản phẩm -->
+                        <div class="list-filter product-main producttype-main ">
+                            <ul class="producttype-list">
+
+                            </ul>
+                            <div class="producttype_footer">
+                                <div class="button">
+                                    <button class="unselection">Bỏ chọn</button>
+                                    <button class="see_result">Xem kết quả</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="colections_filter-item colections_filter-item-screensize">
+                        <div id="colections-screensize" class="colections-screensize" onclick="onclickFilter(this)">
+                            <div class="button-filter">
+                                <div>Kích thước màn hình</div>
+                                <div> <i class="fa-solid fa-sort-down"></i></div>
+                            </div>
+                        </div>
+                        <!-- Kích thước màn hình -->
+                        <div class="list-filter screensize-main ">
+                            <ul class="screensize-list">
+                                <li class="screensize-item"><span>15.6"</span></li>
+                                <li class="screensize-item"><span>14"</span></li>
+                                <li class="screensize-item"><span>13.3"</span></li>
+                                <li class="screensize-item"><span>16"</span></li>
+                            </ul>
+                            <div class="screensize_footer">
+                                <div class="button">
+                                    <button class="unselection">Bỏ chọn</button>
+                                    <button class="see_result">Xem kết quả</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="colections_filter-item colections_filter-item-ram">
+                        <div id="colections-ram" class="colections-ram" onclick="onclickFilter(this)">
+                            <div class="button-filter">
+                                <div>RAM</div>
+                                <div> <i class="fa-solid fa-sort-down"></i></div>
+                            </div>
+                        </div>
+                        <!--RAM -->
+                        <div class="list-filter ram-main ">
+                            <ul class="ram-list">
+                                <li class="ram-item"><span>8GB</span></li>
+                                <li class="ram-item"><span>16GB</span></li>
+
+                            </ul>
+                            <div class="ram_footer">
+                                <div class="button">
+                                    <button class="unselection">Bỏ chọn</button>
+                                    <button class="see_result">Xem kết quả</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="colections_filter-item colections_filter-item-ssd">
+                        <div id="colections-ssd" class="colections-ssd" onclick="onclickFilter(this)">
+                            <div class="button-filter">
+                                <div>SSD</div>
+                                <div> <i class="fa-solid fa-sort-down"></i></div>
+                            </div>
+                        </div>
+                        <!-- SSD -->
+                        <div class="list-filter ssd-main ">
+                            <ul class="ssd-list">
+                                <li class="ssd-item"><span>512GB</span></li>
+                                <li class="ssd-item"><span>256GB</span></li>
+
+                            </ul>
+                            <div class="ssd_footer">
+                                <div class="button">
+                                    <button class="unselection">Bỏ chọn</button>
+                                    <button class="see_result">Xem kết quả</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="colections_filter-item colections_filter-item-vga">
+                        <div id="colections-vga" class="colections-vga" onclick="onclickFilter(this)">
+                            <div class="button-filter">
+                                <div>VGA</div>
+                                <div> <i class="fa-solid fa-sort-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="list-filter vga-main ">
+                            <ul class="vga-list">
+                                <li class="vga-item"><span>RTX 3050/3050Ti</span></li>
+                                <li class="vga-item"><span>GTX 1650</span></li>
+                                <li class="vga-item"><span>RTX 3060</span></li>
+                                <li class="vga-item"><span>UHD</span></li>
+                                <li class="vga-item"><span>IRIS</span></li>
+                            </ul>
+                            <div class="vga_footer">
+                                <div class="button">
+                                    <button class="unselection">Bỏ chọn</button>
+                                    <button class="see_result">Xem kết quả</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="colections_filter-item">
+                        <div class="colections-price">
+                            <div class="button-filter">
+                                <div>Giá</div>
+                                <div> <i class="fa-solid fa-sort-down"></i></div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Hiển thị thông tin để chọn và lọc -->
+            <!-- Phần của nút Bộ lọc -->
+            <div class="filter_main">
+                <div class="filter_header">
+                    <div style="display: flex;">
+                        <div class="filter_header-title">
+                            <strong>Tiêu chí đã chọn</strong>
+                        </div>
+                        <div class="filter_header-sortby">
+                            <span>Duyệt theo : <strong style="color: #2485f6;">10.490.000₫ - 47.990.000₫
+                                    <i class="fa-solid fa-circle-xmark"></i></strong></span>
+                        </div>
+                        <div class="filter_header-remove"><a href="">Xóa bộ lọc</a></div>
+                    </div>
+                    <button id="filter_close" class="filter_close">
+                        <i class="fa-solid fa-xmark"></i>
+                        Đóng
+                    </button>
+                </div>
+                <div class="filter_row1">
+                    <div class="filter_header-vendor">
+                        <div class="filter-vendor-title">
+                            <strong>Hãng</strong>
+                            <ul class="filter-vendor-list">
+                                <li class="filter-vendor-item"><span>ASUS</span></li>
+                                <li class="filter-vendor-item"><span>Không thương hiệu </span></li>
+                                <li class="filter-vendor-item"><span>LG</span></li>
+                                <li class="filter-vendor-item"><span>MSI</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_row2">
+                    <div class="filter_header-cpu filter_row2-item">
+                        <div class="filter-cpu-title">
+                            <strong>CPU</strong>
+                            <ul class="filter-cpu-list">
+                                <li class="filter-cpu-item"><span>INTEL</span></li>
+                                <li class="filter-cpu-item"><span>AMD</span></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_header-producttype filter_row2-item">
+                        <div class="filter-producttype-title">
+                            <strong>Loại sản phẩm</strong>
+
+                        </div>
+                    </div>
+                    <div class="filter_header-screensize filter_row2-item">
+                        <div class="filter-screensize-title">
+                            <strong>Kích thước màn hình</strong>
+                            <ul class="filter-screensize-list">
+                                <li class="filter-screensize-item"><span>15.6"</span></li>
+                                <li class="filter-screensize-item"><span>14"</span></li>
+                                <li class="filter-screensize-item"><span>13.3"</span></li>
+                                <li class="filter-screensize-item"><span>16"</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_row3">
+                    <div class="filter_header-ram filter_row3-item">
+                        <div class="filter-ram-title">
+                            <strong>RAM</strong>
+                            <ul class="filter-ram-list">
+                                <li class="filter-ram-item"><span>8GB</span></li>
+                                <li class="filter-ram-item"><span>16GB</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_header-ssd filter_row3-item">
+                        <div class="filter-ssd-title">
+                            <strong>SSD</strong>
+                            <ul class="filter-ssd-list">
+                                <li class="filter-ssd-item"><span>512GB</span></li>
+                                <li class="filter-ssd-item"><span>256GB</span></li>
+                                <li class="filter-ssd-item"><span>2TB</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_header-vga filter_row3-item">
+                        <div class="filter-vga-title">
+                            <strong>VGA</strong>
+                            <ul class="filter-vga-list">
+                                <li class="filter-vga-item"><span>RTX 3050/3050Ti</span></li>
+                                <li class="filter-vga-item"><span>GTX 1650</span></li>
+                                <li class="filter-vga-item"><span>RTX 3060</span></li>
+                                <li class="filter-vga-item"><span>UHD</span></li>
+                                <li class="filter-vga-item"><span>IRIS</span></li>
+                                <li class="filter-vga-item"><span>RTX 4050</span></li>
+                                <li class="filter-vga-item"><span>RTX 4060</span></li>
+                                <li class="filter-vga-item"><span>RTX Cao cấp</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_price">
+                    <div class="filter_price-title"><strong>Giá</strong></div>
+                    <div class="filter_price-list">
+                        <div class="filter_price-min"> <span>10.490.000đ</span></div>
+                        <div class="filter_price-line"></div>
+                        <div class="filter_price-max"> <span>47.990.000đ</span></div>
+                    </div>
+                    <div class="range_slide">
+                        <div class="range_slide-min"></div>
+                        <div class="range_slide-line"></div>
+                        <div class="range_slide-max"></div>
+                    </div>
+                </div>
+                <div class="filter_footer">
+                    <div class="filter_button">
+                        <button class="unselection">Bỏ chọn</button>
+                        <button class="see_result">Xem kết quả</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Kết thức code phần hiển thị thông tin để chọn và lọc -->
+
+            <div class="container_listbox">
+                <div class="listbox_main">
+                    <i class="fa-solid fa-arrow-down-short-wide"></i>
+                    <span>Xếp theo :</span>
+                    <strong>Nổi bật</strong>
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+                <div class="listbox_colections">
+                    <div class="listbox_colections-item" >Nổi bật</div>
+                    <div class="listbox_colections-item">Giá tăng dần</div>
+                    <div class="listbox_colections-item">Giá giảm dần</div>
+                </div>
+            </div>
+            <div class="container_content">
+                <div class="container_content-list">
+                    <div class="container_content-item">
+                        <div class="container_content-img container_content-img_big">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham1.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Lenovo Ideapad Gaming 3 15IAH7 82S9006YVN</div>
+                            <div class="price-product">
+                                <div class="cost">26.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">18.990.000₫ </div>
+                                    <div class="label-on-sale">-29%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham2.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Gaming MSI Katana 15 B13VEK 1205VN</div>
+                            <div class="price-product">
+                                <div class="cost"> 28.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">27.990.000₫
+                                    </div>
+                                    <div class="label-on-sale">-3%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham3.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop ASUS Vivobook 14X OLED A1403ZA KM066W </div>
+                            <div class="price-product">
+                                <div class="cost"> 20.490.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price"> 16.490.000₫</div>
+                                    <div class="label-on-sale">-19%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham4.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Lenovo Ideapad Slim 5 Light 14ABR8 82XS002JVN </div>
+                            <div class="price-product">
+                                <div class="cost"> 19.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price"> 16.990.000₫</div>
+                                    <div class="label-on-sale">-15%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham5.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Lenovo V15 G3 ABA 82TV002KVN</div>
+                            <div class="price-product">
+                                <div class="cost"> 14.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price"> 10.890.000₫</div>
+                                    <div class="label-on-sale"> -27%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham6.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product"> Laptop Asus Vivobook 15X OLED A1505VA L1114W</div>
+                            <div class="price-product">
+                                <div class="cost"> 20.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price"> 18.290.000₫</div>
+                                    <div class="label-on-sale">-12%</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham7.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming ASUS ROG Strix G16 G614JU N3135W</div>
+                            <div class="price-product">
+                                <div class="cost"> 39.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price"> 36.990.000₫</div>
+                                    <div class="label-on-sale">-7%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham8.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming Acer Predator Helios Neo PHN16 71 74BA</div>
+                            <div class="price-product">
+                                <!-- <div class="cost"></div> -->
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price"> 42.990.000₫</div>
+                                    <!-- <div class="label-on-sale"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham9.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming ASUS TUF Gaming A15 FA507NU LP034W</div>
+                            <div class="price-product">
+                                <div class="cost"> 30.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">27.490.000₫</div>
+                                    <div class="label-on-sale">-11%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham10.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming Lenovo Legion 5 15ARH7H 82RE0036VN</div>
+                            <div class="price-product">
+                                <div class="cost"> 43.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price"> 28.490.000₫</div>
+                                    <div class="label-on-sale"> -35%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham11.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming Lenovo Legion 5 15IAH7 82RC0090VN</div>
+                            <div class="price-product">
+                                <div class="cost">35.290.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">26.790.000₫</div>
+                                    <div class="label-on-sale"> -24%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham12.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming Dell G15 5525 R7H165W11GR3060 </div>
+                            <div class="price-product">
+                                <div class="cost"> 27.490.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">25.990.000₫</div>
+                                    <div class="label-on-sale">-5%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham13.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming Acer Nitro 5 Tiger AN515 58 769J</div>
+                            <div class="price-product">
+                                <div class="cost">30.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">25.490.000₫</div>
+                                    <div class="label-on-sale">-17%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham14.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming ASUS ROG Strix G15 G513IE HN246W</div>
+                            <div class="price-product">
+                                <div class="cost">26.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">21.990.000₫</div>
+                                    <div class="label-on-sale">-18%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham15.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming Gigabyte G5 GE 51VN263SH</div>
+                            <div class="price-product">
+                                <div class="cost">25.590.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">19.990.000₫</div>
+                                    <div class="label-on-sale">-21%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham16.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Gaming Acer Nitro 5 Eagle AN515 57 53F9</div>
+                            <div class="price-product">
+                                <div class="cost">25.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">19.990.000₫</div>
+                                    <div class="label-on-sale">-23%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham17.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming MSI GF63 Thin 11SC 664VN</div>
+                            <div class="price-product">
+                                <div class="cost">21.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">15.490.000₫</div>
+                                    <div class="label-on-sale">-29%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham18.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Gaming Acer Aspire 7 A715 42G R05G</div>
+                            <div class="price-product">
+                                <div class="cost">22.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">14.990.000₫</div>
+                                    <div class="label-on-sale">-34%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham19.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Asus VivoBook 15X OLED S3504VA L1226W</div>
+                            <div class="price-product">
+                                <div class="cost">21.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">18.990.000₫</div>
+                                    <div class="label-on-sale">-13%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham15.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming Gigabyte G5 GE 51VN263SH</div>
+                            <div class="price-product">
+                                <div class="cost">25.590.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">19.990.000₫</div>
+                                    <div class="label-on-sale">-21%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham16.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Gaming Acer Nitro 5 Eagle AN515 57 53F9</div>
+                            <div class="price-product">
+                                <div class="cost">25.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">19.990.000₫</div>
+                                    <div class="label-on-sale">-23%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham17.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming MSI GF63 Thin 11SC 664VN</div>
+                            <div class="price-product">
+                                <div class="cost">21.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">15.490.000₫</div>
+                                    <div class="label-on-sale">-29%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham18.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Gaming Acer Aspire 7 A715 42G R05G</div>
+                            <div class="price-product">
+                                <div class="cost">22.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">14.990.000₫</div>
+                                    <div class="label-on-sale">-34%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham19.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Asus VivoBook 15X OLED S3504VA L1226W</div>
+                            <div class="price-product">
+                                <div class="cost">21.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">18.990.000₫</div>
+                                    <div class="label-on-sale">-13%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham15.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming Gigabyte G5 GE 51VN263SH</div>
+                            <div class="price-product">
+                                <div class="cost">25.590.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">19.990.000₫</div>
+                                    <div class="label-on-sale">-21%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham16.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Gaming Acer Nitro 5 Eagle AN515 57 53F9</div>
+                            <div class="price-product">
+                                <div class="cost">25.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">19.990.000₫</div>
+                                    <div class="label-on-sale">-23%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham17.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop gaming MSI GF63 Thin 11SC 664VN</div>
+                            <div class="price-product">
+                                <div class="cost">21.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">15.490.000₫</div>
+                                    <div class="label-on-sale">-29%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham18.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Gaming Acer Aspire 7 A715 42G R05G</div>
+                            <div class="price-product">
+                                <div class="cost">22.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">14.990.000₫</div>
+                                    <div class="label-on-sale">-34%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container_content-item">
+                        <div class="container_content-img">
+                            <div class="content-img-zoom"><img src="./assest/image/danhmucsanpham19.webp" alt=""></div>
+                        </div>
+                        <div class="container_content-text">
+                            <div class="name-product">Laptop Asus VivoBook 15X OLED S3504VA L1226W</div>
+                            <div class="price-product">
+                                <div class="cost">21.990.000₫</div>
+                                <div class="reduced-price-and-sale">
+                                    <div class="reduced-price">18.990.000₫</div>
+                                    <div class="label-on-sale">-13%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;"><button class="load_more"> Xem thêm sản phẩm </button></div>
+    </div>
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-col  grid__column-2 ">
+                <h5 class="footer-title">VỀ GEARVN</h5>
+                <div class="footer-content">
+                    <p><a href="">Giới thiệu</a> </p>
+                    <p><a href="">Tuyển dụng</a></p>
+                </div>
+            </div>
+            <div class="footer-col grid__column-2 ">
+                <h5 class="footer-title">CHÍNH SÁCH</h5>
+                <div class="footer-content">
+                    <p><a href="">Chính sách bảo hành</a> </p>
+                    <p><a href="">Chính sách thanh toán</a></p>
+                    <p><a href=""> Chính sách giao hàng</a> </p>
+                    <p><a href="">Chính sách bảo mật</a></p>
+                </div>
+            </div>
+            <div class="footer-col grid__column-2 ">
+                <h5 class="footer-title">THÔNG TIN</h5>
+                <div class="footer-content">
+                    <p> <a href="">Hệ thống cửa hàng</a></p>
+                    <p> <a href="">Trung tâm bảo hành</a></p>
+                </div>
+            </div>
+            <div class="footer-col grid__column-2 ">
+                <h5 class="footer-title">TỔNG ĐÀI HỖ TRỢ (MIỄN PHÍ GỌI)</h5>
+                <div class="footer-content footer-content-hottline">
+                    <p> Gọi mua:<a href=""> 1800.6975 </a>(8:00 - 21:00)</p>
+                    <p>CSKH:<a href=""> 1800.6173 </a>(8:00 - 21:00)</p>
+                    <p>Email:<a href="">cskh@gearvn.com </a></p>
+                </div>
+            </div>
+            <div class="footer-col  footer-ship grid__column-2 ">
+                <h5 class="footer-title">ĐƠN VỊ VẬN CHUYỂN</h5>
+                <div class="footer-content">
+                    <img src="./assest/image/ship_1.webp" alt="" class="footer-image">
+                    <img src="./assest/image/ship_2.webp" alt="" class="footer-image">
+                    <img src="./assest/image/ship_3.webp" alt="" class="footer-image">
+                    <img src="./assest/image/ship_4.webp" alt="" class="footer-image">
+                </div>
+                <h5 class="footer-title">CÁCH THỨC THANH TOÁN</h5>
+                <div class="footer-content">
+                    <img src="./assest/image/pay_1.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_2.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_3.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_4.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_5.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_6.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_7.webp" alt="" class="footer-image">
+                    <img src="./assest/image/pay_8.webp" alt="" class="footer-image">
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-line"></div>
+        <div class="connect">
+            <div class="connect_left">
+                <h4 class="connect_title">KẾT NỐI VỚI CHÚNG TÔI</h4>
+                <a href=""><img src="./assest/image/facebook.webp" alt="" class="connect-image"></a>
+                <a href=""><img src="./assest/image/tiktok.webp" alt="" class="connect-image"></a>
+                <a href=""><img src="./assest/image/youtube.webp" alt="" class="connect-image"></a>
+                <a href=""><img src="./assest/image/2023-06-07_11.webp" alt="" class="connect-image"></a>
+                <a href=""><img src="./assest/image/group_1.webp" alt="" class="connect-image"></a>
+            </div>
+            <div class="connect_right"><img src="./assest/image/logo-bct.webp" class="connect_right-img" alt=""></div>
+        </div>
+    </footer>
+
+</body>
+<script src="./assest/js/main.js"></script>
+<script src="./assest/js/category.js"></script>
+</html>
